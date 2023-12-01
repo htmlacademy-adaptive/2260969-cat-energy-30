@@ -58,7 +58,103 @@
     </nav>
   </header>
   <main class="main-container">
-
+    <h1>Подбор программы</h1>
+    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="programs-filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="programs-filter__filter-group">
+          <ul class="filter-group__list  filter-group">
+              <li class="filter-group__option">
+                <label class="">
+                  <span class="">Имя:*</span>
+                  <input class="" type="text" name="cat-name" placeholder="барсик" required>
+                </label>
+              </li>
+              <li class="filter-group__option">
+                <label class="">
+                  <span class="">Вес (кг):*</span>
+                  <input class="" type="text" name="cat-weight" placeholder="7" required>
+                </label>
+              </li>
+              <li class="filter-group__option">
+                <label class="">
+                  <span class="">Возраст (лет):</span>
+                  <input class="" type="text" name="cat-age" placeholder="7">
+                </label>
+              </li>
+          </ul>
+      </fieldset>
+      <fieldset class="programs-filter__filter-group">
+          <ul class="filter-group__list  filter-group">
+            <label class="">
+              <input class="" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+              <span class="">Похудение</span>
+            </label>
+          </ul>
+          <ul class="filter-group__list  filter-group">
+            <label class="">
+              <input class="" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+              <span class="">Набор массы</span>
+            </label>
+          </ul>
+          <ul class="filter-group__list  filter-group">
+            <label class="">
+              <input class="" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
+              <span class="">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </ul>
+      </fieldset>
+      <fieldset class="programs-filter__filter-group">
+        <legend>Контактные данные (владельца кота)</legend>
+        <ul class="filter-group__list  filter-group">
+            <li class="filter-group__option">
+              <label class="">
+                <span class="">E-mail:*</span>
+                <input class="" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="filter-group__option">
+              <label class="">
+                <span class="">Телефон:*</span>
+                <input class="" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+        </ul>
+      </fieldset>
+      <fieldset class="programs-filter__filter-group">
+        <legend>Комментарий</legend>
+        <textarea id="comment" name="comment">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+      <fieldset class="programs-filter__filter-group">
+        <ul class="filter-group__list  filter-group">
+          <li class="filter-group__option">
+            <label class="" for="filter-hotel">
+              <input class="" type="checkbox" name="sweetener" checked>
+              <span class="control-label">Сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="filter-group__option">
+            <label class="" for="filter-hotel">
+              <input class="" type="checkbox" name="sweetener">
+              <span class="control-label">Питьевая вода</span>
+            </label>
+          </li>
+          <li class="filter-group__option">
+            <label class="" for="filter-hotel">
+              <input class="" type="checkbox" name="milk">
+              <span class="control-label">Молоко</span>
+            </label>
+          </li>
+          <li class="filter-group__option">
+            <label class="" for="filter-hotel">
+              <input class="" type="checkbox" name="vitamins">
+              <span class="control-label">Витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="" type="button">Отправить заявку</button>
+      <span>* — Обязательные поля</span>
+    </form>
   </main>
   <footer class="main-footer">
     <section class="contacts">
