@@ -9,7 +9,7 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <a class="main-header__logo" href="index.html" aria-label="Логотип Cat Energy">
       <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" viewBox="0 0 33 38" fill="none">
           <path d="M6.0117 20.9349V18.6514C12.6311 17.7242 19.3065 17.2752 25.988 17.3076C25.988 17.9139 25.988 18.5302 25.9286 19.1465C27.8277 18.2867 29.8236 17.6691 31.8709 17.3076C30.5661 13.8643 28.1884 10.9536 25.1037 9.02347C22.0189 7.09332 18.398 6.25055 14.7979 6.62482C11.1978 6.9991 7.81798 8.56967 5.17831 11.095C2.53863 13.6202 0.785353 16.9603 0.188175 20.6014L6.0117 20.9349Z" fill="#FDC305"/>
           <path d="M26.9784 24.4813C25.8295 25.7745 25.6017 25.6937 25.6017 27.967C25.6017 28.8865 25.6017 32.9178 25.6017 37.2422C27.8723 35.7125 29.7362 33.6331 31.0271 31.1895C32.3181 28.746 32.9959 26.0143 33 23.2385C32.9869 22.1869 32.8809 21.1385 32.6831 20.1064C30.6312 21.3486 28.7183 22.8156 26.9784 24.4813Z" fill="#FDC305"/>
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">
+            <a class="site-list__link site-list__link--active" href="#">
               Подбор программы
             </a>
           </li>
@@ -60,45 +60,47 @@
     <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="programs-filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="programs-filter__filter-group">
+        <legend class="visually-hidden">Сведения о питомце</legend>
           <ul class="filter-group">
               <li class="filter-group__option text-field">
-                <label class="">
-                  <span class="">Имя:*</span>
-                  <input class="" type="text" name="cat-name" placeholder="барсик" required>
+                <label>
+                  <span>Имя:*</span>
+                  <input type="text" name="cat-name" placeholder="барсик" required>
                 </label>
               </li>
               <li class="filter-group__option text-field">
-                <label class="">
-                  <span class="">Вес (кг):*</span>
-                  <input class="" type="text" name="cat-weight" placeholder="7" required>
+                <label>
+                  <span>Вес (кг):*</span>
+                  <input type="text" name="cat-weight" placeholder="7" required>
                 </label>
               </li>
               <li class="filter-group__option text-field">
-                <label class="">
-                  <span class="">Возраст (лет):</span>
-                  <input class="" type="text" name="cat-age" placeholder="7">
+                <label>
+                  <span>Возраст (лет):</span>
+                  <input type="text" name="cat-age" placeholder="7">
                 </label>
               </li>
           </ul>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
+        <legend class="visually-hidden">Выбор программы питания</legend>
         <ul class="filter-group">
           <li class="filter-group__option radio-field">
-            <label class="">
-              <input class="" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
-              <span class="">Похудение</span>
+            <label>
+              <input type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+              <span>Похудение</span>
             </label>
           </li>
           <li class="filter-group__option radio-field">
-            <label class="">
-              <input class="" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
-              <span class="">Набор массы</span>
+            <label>
+              <input type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+              <span>Набор массы</span>
             </label>
           </li>
           <li class="filter-group__option radio-field">
-            <label class="">
-              <input class="" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
-              <span class="">Не знаю (Нужен ваш совет)</span>
+            <label>
+              <input type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
+              <span>Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -107,55 +109,55 @@
         <legend>Контактные данные (владельца кота)</legend>
         <ul class="filter-group">
             <li class="filter-group__option">
-              <label class="">
-                <span class="">E-mail:*</span>
-                <input class="" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
+              <label>
+                <span>E-mail:*</span>
+                <input type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
               </label>
             </li>
             <li class="filter-group__option">
-              <label class="">
-                <span class="">Телефон:*</span>
-                <input class="" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+              <label>
+                <span>Телефон:*</span>
+                <input type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
         </ul>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
         <legend>Комментарий</legend>
-        <label class="visually-hidden" for="comment">Комментарий</label>
-
+        <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
         <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
         </textarea>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
+        <legend>Дополнительно</legend>
         <ul class="filter-group__list  filter-group">
           <li class="filter-group__option checkbox-field">
-            <label class="">
-              <input class="" type="checkbox" name="sweetener" checked>
+            <label>
+              <input type="checkbox" name="sweetener" checked>
               <span class="control-label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="filter-group__option checkbox-field">
-            <label class="">
-              <input class="" type="checkbox" name="drink-water">
+            <label>
+              <input type="checkbox" name="drink-water">
               <span class="control-label">Питьевая вода</span>
             </label>
           </li>
           <li class="filter-group__option checkbox-field">
-            <label class="">
-              <input class="" type="checkbox" name="milk">
+            <label>
+              <input type="checkbox" name="milk">
               <span class="control-label">Молоко</span>
             </label>
           </li>
           <li class="filter-group__option checkbox-field">
-            <label class="">
-              <input class="" type="checkbox" name="vitamins">
+            <label>
+              <input type="checkbox" name="vitamins">
               <span class="control-label">Витамины</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="" type="submit">Отправить заявку</button>
+      <button type="submit">Отправить заявку</button>
       <span>* — Обязательные поля</span>
     </form>
   </main>
