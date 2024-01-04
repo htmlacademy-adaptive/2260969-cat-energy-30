@@ -43,8 +43,8 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1>Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="main-inner-title">Подбор программы</h1>
+    <p class="main-inner-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="programs-filter" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="programs-filter__filter-group">
         <legend class="visually-hidden">Сведения о питомце</legend>
@@ -52,19 +52,19 @@
               <li class="filter-group__option text-field">
                 <label>
                   <span>Имя:*</span>
-                  <input type="text" name="cat-name" placeholder="барсик" required>
+                  <input class="text-field__input" type="text" name="cat-name" placeholder="барсик" required>
                 </label>
               </li>
               <li class="filter-group__option text-field">
                 <label>
                   <span>Вес (кг):*</span>
-                  <input type="text" name="cat-weight" placeholder="7" required>
+                  <input class="text-field__input" type="text" name="cat-weight" placeholder="7" required>
                 </label>
               </li>
               <li class="filter-group__option text-field">
                 <label>
                   <span>Возраст (лет):</span>
-                  <input type="text" name="cat-age" placeholder="7">
+                  <input class="text-field__input" type="text" name="cat-age" placeholder="7">
                 </label>
               </li>
           </ul>
@@ -74,49 +74,49 @@
         <ul class="filter-group">
           <li class="filter-group__option radio-field">
             <label>
-              <input type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+              <input class="radio-field__input" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
               <span>Похудение</span>
             </label>
           </li>
           <li class="filter-group__option radio-field">
             <label>
-              <input type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+              <input class="radio-field__input" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
               <span>Набор массы</span>
             </label>
           </li>
           <li class="filter-group__option radio-field">
             <label>
-              <input type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
+              <input class="radio-field__input" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
               <span>Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
-        <legend>Контактные данные (владельца кота)</legend>
+        <legend class="programs-filter__title">Контактные данные (владельца кота)</legend>
         <ul class="filter-group">
             <li class="filter-group__option">
               <label>
                 <span>E-mail:*</span>
-                <input type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
+                <input class="filter-group__email-input" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
               </label>
             </li>
             <li class="filter-group__option">
               <label>
                 <span>Телефон:*</span>
-                <input type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+                <input class="filter-group__tel-input" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
         </ul>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
-        <legend>Комментарий</legend>
+        <legend class="programs-filter__title">Комментарий</legend>
         <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
-        <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+        <textarea class="filter-group__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
         </textarea>
       </fieldset>
       <fieldset class="programs-filter__filter-group">
-        <legend>Дополнительно</legend>
+        <legend class="programs-filter__title">Дополнительно</legend>
         <ul class="filter-group">
           <li class="filter-group__option checkbox-field">
             <label>
@@ -144,8 +144,8 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button" type="submit">Отправить заявку</button>
-      <span>* — Обязательные поля</span>
+      <button class="button button-primary" type="submit">Отправить заявку</button>
+      <span class="programs-filter__required-fields">* — Обязательные поля</span>
     </form>
   </main>
   <footer class="main-footer">
