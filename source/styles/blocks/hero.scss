@@ -1,12 +1,25 @@
 .hero {
+  background-color: $brand-primary-color;
 
 }
 
 .hero__title {
-
+  color: $basic-white;
+  text-align: center;
+  font-family: $secondary-font-family;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
 }
 
 .hero__description {
+  color: $basic-white;
+  text-align: center;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 14px;
+  text-transform: uppercase;
 
 }
 
@@ -15,6 +28,10 @@
 }
 
 .hero__link {
-
+  font-size: 20px;
+  font-style: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 

@@ -1,12 +1,14 @@
 $primary-font-size: 14px;
 $primary-line-height: 18px;
 
-$primary-font-family: "Lato";
-$secondary-font-family: "Oswald";
+$primary-font-family: "Lato", "Arial", sans-serif;
+$secondary-font-family: "Oswald", "Arial", sans-serif;
 
 $basic-white: #ffffff;
 $basic-black: #000000;
+$basic-grey: #f2f2f2;
 
-$text-secondary-darker-color: #222222;
-$text-secondary-color: #444444;
-$company-primary-color: #68b738;
+$special_dark-grey-1: #444444;
+$special_dark-grey-2: #222222;
+
+$brand-primary-color: #68b738;
