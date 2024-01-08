@@ -14,6 +14,7 @@
 .product-use-cases__item--weight-gain {
   --background-item: url("../../images/icons/stack.svg#cat-pro");
   --background-item-size: 67px 28px;
+  background-size: 67px 28px;
 }
 
 .product-use-cases__item-title {
@@ -56,6 +57,7 @@
     background: var(--background-item) no-repeat center center;
     background-size: var(--background-item-size);
   }
+
 }
 
 .product-use-cases__item-description {
@@ -88,23 +90,25 @@
 
     background-color: $basic-black;
 
-
     mask-image: url("../../images/icons/stack.svg#arrow");
     mask-repeat: no-repeat;
 
     mask-position: -8px;
     mask-size: 32px 10px;
 
-
     transition: 0.4s ease-in-out;
+
   }
 
 
   &:hover::after {
     mask-position: center;
+
   }
 
   &:active::after {
     opacity: 0.3;
   }
+
+
 }
