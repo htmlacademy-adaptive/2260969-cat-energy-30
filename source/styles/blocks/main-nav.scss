@@ -10,3 +10,37 @@
 
 }
 
+.main-nav__toggle {
+  width: 24px;
+  height: 38px;
+}
+
+.main-navigation__toggle--open {
+  mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
+  background-color: $basic-black;
+  mask-size: 24px 16px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.main-navigation__toggle--close {
+  mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
+  background-color: $basic-black;
+  mask-size: 18px 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}

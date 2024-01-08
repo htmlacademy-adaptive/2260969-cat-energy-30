@@ -8,15 +8,29 @@
   border: 0;
 }
 
-.button--all {
-  background-color: $basic-grey;
-  color: $special_dark-grey-1;
-}
 
-.button-primary {
+.button--primary {
   background-color: $brand-primary-color;
   color: $basic-white;
+
+  &:hover {
+    background-color: $brand-secondary-color;
+  }
+
+  &:active {
+    background-color: $brand-secondary-color;
+    opacity: 0.3;
+  }
+
 }
 
+.button--all {
+  background-color: $basic-grey;
+  color: $special-dark-grey-1;
+
+  &:hover {
+    background-color: $special-grey;
+  }
+}
 
 

@@ -22,7 +22,7 @@
       <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle main-navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -30,15 +30,15 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="#">
+            <a class="site-list__link site-list__link--active" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="programs.html">
-              Подбор программы
-            </a>
-          </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="programs.html">
+            Подбор программы
+          </a>
+        </li>
         </ul>
     </nav>
   </header>
@@ -66,7 +66,7 @@
             <dt>Цена</dt>
             <dd>700</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -87,7 +87,7 @@
             <dt>Цена</dt>
             <dd>1000</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -108,7 +108,7 @@
             <dt>Цена</dt>
             <dd>700</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -129,7 +129,7 @@
             <dt>Цена</dt>
             <dd>1000</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -150,7 +150,7 @@
             <dt>Цена</dt>
             <dd>400</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -171,7 +171,7 @@
             <dt>Цена</dt>
             <dd>700</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item">
           <a href="#" aria-label="Ссылка на товар">
@@ -192,7 +192,7 @@
             <dt>Цена</dt>
             <dd>500</dd>
           </dl>
-          <a class="main-products__item-link button button-primary" href="#">Заказать</a>
+          <a class="main-products__item-link button button--primary" href="#">Заказать</a>
         </li>
         <li class="main-products__item main-products__item--all">
           <h3 class="main-products__title">Показать еще 100500 товаров</h3>
@@ -208,25 +208,25 @@
           <h3 class="additional-products__title">Сахарозаменитель</h3>
           <p class="additional-products__description">1 упаковка (100 г)</p>
           <p class="additional-products__price">200 ₽</p>
-          <a class="additional-products__link button button-primary" href="#">Заказать</a>
+          <a class="additional-products__link button button--primary" href="#">Заказать</a>
         </li>
         <li>
           <h3 class="additional-products__title">Питьевая вода</h3>
           <p class="additional-products__description">5 литров</p>
           <p class="additional-products__price">50 ₽</p>
-          <a class="additional-products__link button button-primary" href="#">Заказать</a>
+          <a class="additional-products__link button button--primary" href="#">Заказать</a>
         </li>
         <li>
           <h3 class="additional-products__title">молоко</h3>
           <p class="additional-products__description">1 литр</p>
           <p class="additional-products__price">100 ₽</p>
-          <a class="additional-products__link button button-primary" href="#">Заказать</a>
+          <a class="additional-products__link button button--primary" href="#">Заказать</a>
         </li>
         <li>
           <h3 class="additional-products__title">витамины</h3>
           <p class="additional-products__description">1 упаковка (30 г)</p>
           <p class="additional-products__price">300 ₽</p>
-          <a class="additional-products__link button button-primary" href="#">Заказать</a>
+          <a class="additional-products__link button button--primary" href="#">Заказать</a>
         </li>
       </ul>
       <div class="additional-products-line__gift gift">
@@ -261,27 +261,24 @@
     <div class="main-footer__social">
       <ul class="footer-social-list">
         <li class="footer-social-list__item">
-          <a class="footer-social-list__link" href="#">
+          <a class="footer-social-list__link footer-social-list__link--vkontakte" href="#">
             <span class="visually-hidden">ВКонтакте.</span>
-
           </a>
         </li>
         <li class="footer-social-list__item">
-          <a class="footer-social-list__link" href="#">
+          <a class="footer-social-list__link footer-social-list__link--youtube" href="#">
             <span class="visually-hidden">Youtube.</span>
-
           </a>
         </li>
         <li class="footer-social-list__item">
-          <a class="footer-social-list__link" href="#">
+          <a class="footer-social-list__link footer-social-list__link--telegram" href="#">
             <span class="visually-hidden">Телеграм.</span>
-
           </a>
         </li>
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="#">
+      <a class="copyright__link copyright__link--htmlcademy-icon" href="#">
         <span>HTML Academy</span>
       </a>
     </div>

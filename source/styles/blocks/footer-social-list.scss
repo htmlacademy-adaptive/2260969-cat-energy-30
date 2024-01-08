@@ -9,8 +9,53 @@
 
 }
 
-
 .footer-social-list__link {
+  display: block;
+  height: 28px;
+  width: 22px;
 
+}
+
+
+.footer-social-list__link--vkontakte {
+  mask-image: url("../../images/icons/stack.svg#vkontakte");
+  background-color: $special-black;
+
+  &:hover {
+    background-color: $brand-primary-color;
+  }
+
+  &:active {
+    background-color: $brand-primary-color;
+    opacity: 0.3;
+  }
+}
+
+.footer-social-list__link--youtube {
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  background-color: $special-black;
+
+  &:hover {
+    background-color: $brand-primary-color;
+  }
+
+  &:active {
+    background-color: $brand-primary-color;
+    opacity: 0.3;
+  }
+}
+
+.footer-social-list__link--telegram {
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  background-color: $special-black;
+
+  &:hover {
+    background-color: $brand-primary-color;
+  }
+
+  &:active {
+    background-color: $brand-primary-color;
+    opacity: 0.3;
+  }
 }
 

@@ -23,12 +23,20 @@
 }
 
 .filter-group__tel-input {
-  color: $special_dark-grey-1;
+  color: $special-dark-grey-1;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
 }
 
-
+.filter-group__textarea::placeholder {
+  font-family: $secondary-font-family;
+  color: $special-dark-grey-1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}

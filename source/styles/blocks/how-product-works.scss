@@ -1,4 +1,3 @@
-
 .how-product-works {
 
 }
@@ -18,25 +17,37 @@
 }
 
 .how-product-works__description {
-  color: $special_dark-grey-1;
+  color: $special-dark-grey-1;
   font-family: $primary-font-family;
   font-size: 14px;
   font-style: normal;
   line-height: 18px;
+
+  &::before {
+    content: " ";
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background: $brand-primary-color var(--background-item) no-repeat 50% 50%;
+    background-size: 25px 30px;
+  }
+
 }
 
 .how-product-works__description--detail-1 {
-
+  --background-item: url("../../images/icons/stack.svg#leaf");
 }
 
 .how-product-works__description--detail-2 {
-
+  --background-item: url("../../images/icons/stack.svg#pot");
 }
 
 .how-product-works__description--detail-3 {
-
+  --background-item: url("../../images/icons/stack.svg#cutlery");
 }
 
 .how-product-works__description--detail-4 {
-
+  --background-item: url("../../images/icons/stack.svg#clock");
 }
