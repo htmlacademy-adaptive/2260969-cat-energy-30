@@ -12,36 +12,38 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo logo" href="index.html" aria-label="Логотип Cat Energy">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="logo__image-icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy.">
-      </picture>
-      <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="main-nav__list site-list">
+  <div class="container">
+    <header class="main-header">
+      <a class="main-header__logo logo" href="index.html" aria-label="Логотип Cat Energy">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="logo__image-icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy.">
+        </picture>
+        <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Главная
+            <a class="site-list__link" href="programs.html">
+              Подбор программы
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="programs.html">
-            Подбор программы
-          </a>
-        </li>
-        </ul>
-    </nav>
-  </header>
+          </ul>
+      </nav>
+    </header>
+  </div>
   <main class="main-container">
     <h1 class="visually-hidden">Cat Energy - продажа функционального питания для котов</h1>
     <section class="hero">
