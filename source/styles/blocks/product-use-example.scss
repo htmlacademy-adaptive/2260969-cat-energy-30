@@ -2,6 +2,31 @@
   background-color: #eaeaea;
 }
 
+.product-use-example__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+    outline: 5px solid rgba(12, 234, 178, 0.8);
+    outline-offset: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    outline: 5px solid rgba(237, 138, 8, 0.8);
+    outline-offset: -5px;
+  }
+}
+
+
+
 .product-use-example__title {
   color: $basic-black;
   font-family: $secondary-font-family;

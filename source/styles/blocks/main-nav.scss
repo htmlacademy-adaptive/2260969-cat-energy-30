@@ -1,39 +1,41 @@
 .main-nav {
+  position: relative;
 
-  // outline: 5px solid rgba(173, 243, 9, 0.8);
-  // outline-offset: -5px;
-
+  @media (max-width: $mobile-width-only) {
+    display: none; // временно скрываем выпадающее меню
+  }
 }
 
 .main-nav__list {
-
   @media (max-width: $mobile-width-only) {
-    //display: none;
-    }
+    position: absolute;
+    top: 0;
+    left: -20px;
 
-    @media (min-width: $tablet-width)  {
-      display: flex;
-      flex-wrap: wrap;
-      }
-
-
-
+    background-color: $basic-white;
+    outline: 5px solid rgba(173, 243, 9, 0.8);
+    outline-offset: -5px;
+  }
 
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__toggle {
   width: 24px;
   height: 38px;
 
-  position: absolute;
+  //   position: absolute;
 
-  top: 0;
-  right: 0;
+  //  top: 0;
+  //   right: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
-    }
+  }
 }
 
 .main-nav__toggle--open {
