@@ -2,7 +2,19 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    display: none; // временно скрываем выпадающее меню
+   // display: none;  временно скрываем выпадающее меню
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 25px;
+
   }
 }
 
@@ -13,18 +25,23 @@
     left: -20px;
 
     background-color: $basic-white;
-    outline: 5px solid rgba(173, 243, 9, 0.8);
-    outline-offset: -5px;
+    //outline: 5px solid rgba(173, 243, 9, 0.8);
+    //outline-offset: -5px;
   }
 
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
 }
 
 .main-nav__toggle {
+  align-self: center;
+
+  //padding-top: 40px;
+  //padding-bottom: 20px;
+
   width: 24px;
   height: 38px;
 
@@ -41,7 +58,7 @@
 .main-nav__toggle--open {
   mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
   background-color: $basic-black;
-  mask-size: 24px 16px;
+  mask-size: 24px 18px;
 
   &:hover {
     opacity: 0.6;

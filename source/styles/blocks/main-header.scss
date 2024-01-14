@@ -14,8 +14,8 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+ // outline: 5px solid rgba(255, 0, 0, 0.8);
+ // outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -46,5 +46,24 @@
   justify-content: space-between;
   // outline: 5px solid rgba(91, 25, 216, 0.8);
   // outline-offset: -5px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 13px;
+    padding-bottom: 15px;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+
+@media (min-width: $desktop-width) {
+
+  padding-top: 55px;
+  padding-bottom: 25px;
+
+}
 }
 

@@ -1,4 +1,6 @@
 .logo {
+  align-self: center;
+
   &:hover {
     opacity: 0.8;
   }
@@ -9,6 +11,17 @@
 }
 
 .logo__image-icon {
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+
+
+	}
+
+@media (min-width: $desktop-width) {
+  padding-right: 14px;
+	}
+
 
 
 }
