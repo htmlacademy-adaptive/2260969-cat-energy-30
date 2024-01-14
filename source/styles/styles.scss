@@ -4,6 +4,8 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
+//@import "./global/container.scss";
+
 
 
 /* BLOCKS */
@@ -22,12 +24,9 @@
 @import "./blocks/compare-slider.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/contacts.scss";
-@import "./blocks/cooperation-invitation.scss";
-@import "./blocks/footer-address.scss";
 @import "./blocks/footer-social-list.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/main-inner-title.scss";
-@import "./blocks/main-inner-description.scss";
+@import "./blocks/questionnaire.scss";
 @import "./blocks/main-products-line.scss";
 @import "./blocks/main-products.scss";
 @import "./blocks/additional-products-line.scss";
@@ -39,3 +38,4 @@
 @import "./blocks/text-field.scss";
 @import "./blocks/radio-field.scss";
 @import "./blocks/checkbox-field.scss";
+

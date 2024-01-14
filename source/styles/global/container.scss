@@ -1,50 +1,22 @@
-.main-footer {
-  background-color: #f2f2f2;
-
-
-}
-
-.main-footer__wrapper {
+.container {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
 
+
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
     padding: 0 30px;
     outline: 5px solid rgba(12, 234, 178, 0.8);
     outline-offset: -5px;
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 1220px;
     padding: 0 110px;
     outline: 5px solid rgba(237, 138, 8, 0.8);
     outline-offset: -5px;
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
-
-
-.main-footer__logo {
-
-}
-
-.main-footer__social {
-
-
-}
-
-.main-footer__copyright {
-
-}
-

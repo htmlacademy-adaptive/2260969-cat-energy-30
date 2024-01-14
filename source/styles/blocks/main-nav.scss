@@ -1,17 +1,44 @@
 .main-nav {
+  position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    display: none; // временно скрываем выпадающее меню
+  }
 }
 
 .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 0;
+    left: -20px;
 
+    background-color: $basic-white;
+    outline: 5px solid rgba(173, 243, 9, 0.8);
+    outline-offset: -5px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__toggle {
   width: 24px;
   height: 38px;
+
+  //   position: absolute;
+
+  //  top: 0;
+  //   right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-navigation__toggle--open {
+.main-nav__toggle--open {
   mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
   background-color: $basic-black;
   mask-size: 24px 16px;
@@ -25,7 +52,7 @@
   }
 }
 
-.main-navigation__toggle--close {
+.main-nav__toggle--close {
   mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
   background-color: $basic-black;
   mask-size: 18px 18px;
