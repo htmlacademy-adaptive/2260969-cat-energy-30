@@ -1,6 +1,7 @@
 .copyright {
-
+  //display: block;
 }
+
 
 .copyright__link {
   color: $special-dark-grey-1;
@@ -9,6 +10,41 @@
   font-style: normal;
   line-height: 20px;
   text-decoration: none;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+
+
+	}
+
+}
+
+.copyright__link--htmlcademy-icon {
+
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+	}
+
+
+  &::after {
+    content: " ";
+
+    display: inline-block;
+    height: 27px;
+    width: 34px;
+
+    mask-image: url("../../images/logo-html-academy.svg");
+    background-color: $special-black;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
 
   &:hover::after {
     background-color: $brand-primary-color;
@@ -23,32 +59,6 @@
   }
 }
 
-.copyright__link--htmlcademy-icon {
-  &::after {
-    content: " ";
-
-    display: inline-block;
-    height: 27px;
-    width: 34px;
-
-    mask-image: url("../../images/logo-html-academy.svg");
-    background-color: $special-black;
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }
+.copyright__name {
+ // display: block;
 }
-
-
-// .footer-social-list__link--vkontakte {
-//   mask-image: url("../../images/icons/stack.svg#vkontakte");
-//   background-color: $special-black;
-
-//   &:hover {
-//     background-color: $brand-primary-color;
-//   }
-
-//   &:active {
-//     background-color: $brand-primary-color;
-//     opacity: 0.3;
-//   }
-// }
