@@ -3,14 +3,23 @@
 
   position: relative;
 
- // outline: 5px solid rgba(255, 0, 0, 0.8);
+
+@media (max-width: $mobile-width-only) {
+   // outline: 5px solid rgba(255, 0, 0, 0.8);
  // outline-offset: -5px;
+ background-color: $basic-grey;
+
+}
+
+
 
 
   @media (min-width: $tablet-width) {
 
    // outline: 5px solid rgba(12, 234, 178, 0.8);
    // outline-offset: -5px;
+
+   background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,11 +157,8 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-   
+    padding: 60px;
+
 
   }
 }
