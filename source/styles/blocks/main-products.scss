@@ -109,12 +109,12 @@
 }
 
 .main-products__image {
-  @media (max-width: $mobile-width-only) {
-  grid-row: span 2;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-}
+    @media (max-width: $mobile-width-only) {
+    grid-row: span 2;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
 }
 
 
