@@ -2,7 +2,7 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-   // display: none;  временно скрываем выпадающее меню
+    display: none; // временно скрываем выпадающее меню
   }
 
   @media (min-width: $tablet-width) {
