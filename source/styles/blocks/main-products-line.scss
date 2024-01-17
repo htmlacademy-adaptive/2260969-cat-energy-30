@@ -33,6 +33,13 @@
   font-style: normal;
   line-height: 36px;
 
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+
+}
+
 }
 
 
