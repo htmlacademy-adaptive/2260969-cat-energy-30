@@ -76,7 +76,6 @@
     display: grid;
 
     grid-template-columns: 50% 50%;
-    //gap: 5px;
 
     margin-bottom: 17px;
 
@@ -89,7 +88,6 @@
 
 
   @media (min-width: $tablet-width) {
-   // padding: 10px 32px 37px 32px;
     margin-top: 10px;
     margin-right: 32px;
     margin-bottom: 37px;
@@ -260,7 +258,6 @@
 .main-products__item-link {
   display: block;
   box-sizing: border-box;
-  padding: 10px 0;
 
   @media (max-width: $mobile-width-only) {
     grid-column: span 2;
