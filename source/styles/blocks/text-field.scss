@@ -11,5 +11,18 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  width: auto;
+  border: 0;
+  outline: 1px solid #e7e7e7;
+  padding: 13px 0 13px 15px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+
+font-size: 20px;
+line-height: normal;
+
+
+
+	}
+
 }

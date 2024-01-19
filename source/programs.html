@@ -52,7 +52,7 @@
     <section class="questionnaire">
       <div class="questionnaire__wrapper">
         <h1 class="questionnaire__title">Подбор программы</h1>
-        <p class="questionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="questionnaire__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form class="programs-filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="programs-filter__filter-group">
             <legend class="visually-hidden">Сведения о питомце</legend>
@@ -77,83 +77,92 @@
                   </li>
               </ul>
           </fieldset>
-          <fieldset class="programs-filter__filter-group">
+          <fieldset class="programs-filter__filter-group programs-filter__filter-group--border">
             <legend class="visually-hidden">Выбор программы питания</legend>
             <ul class="filter-group">
               <li class="filter-group__option radio-field">
                 <label>
-                  <input class="radio-field__input" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+                  <span class="control__mark control__mark--radio-field"></span>
                   <span>Похудение</span>
                 </label>
               </li>
               <li class="filter-group__option radio-field">
                 <label>
-                  <input class="radio-field__input" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+                  <span class="control__mark control__mark--radio-field"></span>
                   <span>Набор массы</span>
                 </label>
               </li>
               <li class="filter-group__option radio-field">
                 <label>
-                  <input class="radio-field__input" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
+                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
+                  <span class="control__mark control__mark--radio-field"></span>
                   <span>Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="programs-filter__filter-group">
-            <legend class="programs-filter__title">Контактные данные (владельца кота)</legend>
-            <ul class="filter-group">
-                <li class="filter-group__option">
-                  <label>
-                    <span>E-mail:*</span>
-                    <input class="filter-group__email-input" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
-                  </label>
-                </li>
-                <li class="filter-group__option">
-                  <label>
-                    <span>Телефон:*</span>
-                    <input class="filter-group__tel-input" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
-                  </label>
-                </li>
-            </ul>
+              <legend class="programs-filter__title">Контактные данные (владельца кота)</legend>
+              <ul class="filter-group">
+                  <li class="filter-group__option">
+                    <label>
+                      <span>E-mail:*</span>
+                      <input class="filter-group__email-input" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
+                    </label>
+                  </li>
+                  <li class="filter-group__option">
+                    <label>
+                      <span>Телефон:*</span>
+                      <input class="filter-group__tel-input" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+                    </label>
+                  </li>
+              </ul>
           </fieldset>
           <fieldset class="programs-filter__filter-group">
-            <legend class="programs-filter__title">Комментарий</legend>
-            <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
-            <textarea class="filter-group__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
-            </textarea>
+              <legend class="programs-filter__title">Комментарий</legend>
+              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
+              <textarea class="filter-group__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+              </textarea>
           </fieldset>
           <fieldset class="programs-filter__filter-group">
-            <legend class="programs-filter__title">Дополнительно</legend>
-            <ul class="filter-group">
-              <li class="filter-group__option checkbox-field">
-                <label>
-                  <input type="checkbox" name="sweetener" checked>
-                  <span class="control-label">Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="filter-group__option checkbox-field">
-                <label>
-                  <input type="checkbox" name="drink-water">
-                  <span class="control-label">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="filter-group__option checkbox-field">
-                <label>
-                  <input type="checkbox" name="milk">
-                  <span class="control-label">Молоко</span>
-                </label>
-              </li>
-              <li class="filter-group__option checkbox-field">
-                <label>
-                  <input type="checkbox" name="vitamins">
-                  <span class="control-label">Витамины</span>
-                </label>
-              </li>
-            </ul>
+              <legend class="programs-filter__title">Дополнительно</legend>
+              <ul class="filter-group filter-group--row filter-group--column">
+                <li class="filter-group__option checkbox-field">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-field__input" type="checkbox" name="sweetener" checked>
+                    <span class="control__mark"></span>
+                    <span>Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="filter-group__option checkbox-field">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-field__input" type="checkbox" name="drink-water">
+                    <span class="control__mark"></span>
+                    <span>Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="filter-group__option checkbox-field">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-field__input" type="checkbox" name="milk">
+                    <span class="control__mark"></span>
+                    <span>Молоко</span>
+                  </label>
+                </li>
+                <li class="filter-group__option checkbox-field">
+                  <label>
+                    <input class="visually-hidden checkbox-field__input" type="checkbox" name="vitamins">
+                    <span class="control__mark"></span>
+                    <span>Витамины</span>
+                  </label>
+                </li>
+              </ul>
           </fieldset>
-          <button class="button button--primary" type="submit">Отправить заявку</button>
-          <span class="programs-filter__required-fields">* — Обязательные поля</span>
+          <div class="questionnaire__footer">
+            <button class="button button--primary" type="submit">Отправить заявку</button>
+            <span class="programs-filter__required-fields">* — Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
