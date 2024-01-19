@@ -32,7 +32,6 @@
     outline: 5px solid rgba(237, 138, 8, 0.8);
     outline-offset: -5px;
   }
-
 }
 
 
@@ -49,21 +48,18 @@
 
   @media (min-width: $tablet-width) {
 
-      font-size: 60px;
-      line-height: 60px;
+    font-size: 60px;
+    line-height: 60px;
 
     margin-top: 65px;
     margin-bottom: 54px;
+  }
 
-	}
+  @media (min-width: $desktop-width) {
 
-@media (min-width: $desktop-width) {
-
-  margin-top: 74px;
-  margin-bottom: 55px;
-
-	}
-
+    margin-top: 74px;
+    margin-bottom: 55px;
+  }
 }
 
 .questionnaire__description {
@@ -78,47 +74,36 @@
 
   @media (min-width: $tablet-width) {
 
-font-size: 20px;
+    font-size: 20px;
 
-line-height: 30px;
+    line-height: 30px;
 
 
     margin-bottom: 77px;
+  }
 
+  @media (min-width: $desktop-width) {
 
-
-	}
-
-@media (min-width: $desktop-width) {
-
-  margin-bottom: 67px;
-	}
-
+    margin-bottom: 67px;
+  }
 }
 
 .questionnaire__footer {
-
   @media (max-width: $mobile-width-only) {
 
     display: grid;
     row-gap: 21px;
-
   }
 
 
-@media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 60px;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    align-items: center;
+  }
 
-
-}
-
-@media (min-width: $desktop-width) {
-  column-gap: 80px;
-
-}
-
-
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+  }
 }

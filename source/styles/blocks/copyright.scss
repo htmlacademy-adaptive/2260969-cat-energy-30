@@ -21,17 +21,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
-
-
-	}
-
+  }
 }
 
 .copyright__link--htmlcademy-icon {
-
   @media (min-width: $tablet-width) {
     padding-left: 23px;
-	}
+  }
 
 
   &::after {
@@ -61,5 +57,5 @@
 }
 
 .copyright__name {
- // display: block;
+  // display: block;
 }

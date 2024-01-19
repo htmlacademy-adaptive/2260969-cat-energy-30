@@ -9,18 +9,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between
-
-	}
+    justify-content: space-between;
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     flex-direction: column;
     //padding: 56px 43px 42px 41px;
-	}
-
-
-
+  }
 }
 
 .gift__description {
@@ -34,20 +30,14 @@
 
   @media (min-width: $tablet-width) {
     width: 161px;
-
-
-	}
+  }
 
   @media (min-width: $desktop-width) {
     width: 125px;
-
-
-	}
-
+  }
 }
 
 .gift__icon {
-
 
 
   background-image: url("../../images/icons/stack.svg#gift");
@@ -59,16 +49,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-
-	}
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 48px;
-
-	}
-
+  }
 }
-
-
-
 

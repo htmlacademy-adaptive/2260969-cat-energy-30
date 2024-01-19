@@ -10,28 +10,21 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-
   }
 }
 
 
 @media (min-width: $tablet-width) {
-
   .site-list li:last-child a {
     padding-right: 0;
-   // border: 2px solid orange;
-
+    // border: 2px solid orange;
   }
-
-
 }
-
 
 
 .site-list__item {
   text-align: center;
   vertical-align: middle;
-
 }
 
 .site-list__link {
@@ -50,7 +43,6 @@
     padding-top: 22px;
     padding-bottom: 24px;
     border: 1px solid #e6e6e6;
-
   }
 
 
@@ -58,22 +50,14 @@
     font-size: 18px;
     line-height: 24px;
 
-    padding-top: 15px;
-    padding-right: 33px;
-    //padding: 15px 33px;
     padding: 15px;
-
-
-    }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
 
-  padding-top: 20px;
-  padding-right: 33px;
-  // padding: 20px 33px;
-  padding: 20px;
+    padding: 20px;
   }
 
   &:hover {
@@ -83,30 +67,24 @@
   &:active {
     opacity: 0.3;
   }
-
 }
 
 
-
 .site-list__link--active {
-
   @media (min-width: $tablet-width) {
     text-decoration: underline;
     text-decoration-color: $brand-primary-color;
     text-decoration-thickness: 2px;
     text-underline-position: under;
     text-underline-offset: 10px;
+  }
 
-
-	}
-
-@media (min-width: $desktop-width) {
-  text-decoration: underline;
-  text-decoration-color: $brand-primary-color;
-  text-decoration-thickness: 2px;
-  text-underline-position: under;
-  text-underline-offset: 8px;
-
-	}
+  @media (min-width: $desktop-width) {
+    text-decoration: underline;
+    text-decoration-color: $brand-primary-color;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+    text-underline-offset: 8px;
+  }
 }
 

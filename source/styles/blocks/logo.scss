@@ -11,19 +11,13 @@
 }
 
 .logo__image-icon {
-
   @media (min-width: $tablet-width) {
     padding-right: 13px;
+  }
 
-
-	}
-
-@media (min-width: $desktop-width) {
-  padding-right: 14px;
-	}
-
-
-
+  @media (min-width: $desktop-width) {
+    padding-right: 14px;
+  }
 }
 
 .logo__image-text {

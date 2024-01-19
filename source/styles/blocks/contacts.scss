@@ -4,27 +4,24 @@
   position: relative;
 
 
-@media (max-width: $mobile-width-only) {
-   // outline: 5px solid rgba(255, 0, 0, 0.8);
- // outline-offset: -5px;
- background-color: $basic-grey;
-
-}
-
-
+  @media (max-width: $mobile-width-only) {
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    // outline-offset: -5px;
+    background-color: $basic-grey;
+  }
 
 
   @media (min-width: $tablet-width) {
 
-   // outline: 5px solid rgba(12, 234, 178, 0.8);
-   // outline-offset: -5px;
+    // outline: 5px solid rgba(12, 234, 178, 0.8);
+    // outline-offset: -5px;
 
-   background-color: $basic-grey;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-   // outline: 5px solid rgba(237, 138, 8, 0.8);
-   // outline-offset: -5px;
+    // outline: 5px solid rgba(237, 138, 8, 0.8);
+    // outline-offset: -5px;
   }
 }
 
@@ -32,8 +29,8 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
- // outline: 5px solid rgba(255, 0, 0, 0.8);
- // outline-offset: -5px;
+  // outline: 5px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -5px;
 
   display: flex;
 
@@ -41,24 +38,20 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
-  //  outline: 5px solid rgba(12, 234, 178, 0.8);
-  //  outline-offset: -5px;
-
+    //  outline: 5px solid rgba(12, 234, 178, 0.8);
+    //  outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
 
-   // outline: 5px solid rgba(237, 138, 8, 0.8);
-   // outline-offset: -5px;
+    // outline: 5px solid rgba(237, 138, 8, 0.8);
+    // outline-offset: -5px;
 
     justify-content: space-between;
-
-
   }
 }
-
 
 
 .contacts__info {
@@ -73,11 +66,7 @@
     top: 95px;
 
     background-color: $basic-white;
-
   }
-
-
-
 }
 
 .contacts iframe {
@@ -105,17 +94,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 5px;
-
   }
 
-@media (min-width: $tablet-width) {
-  width: 354px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 40px;
-
-}
-
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+  }
 
 
   @media (min-width: $desktop-width) {
@@ -124,9 +110,7 @@
     padding-bottom: 60px;
     padding-left: 60px;
     padding-right: 60px;
-
   }
-
 }
 
 
@@ -142,7 +126,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 5px;
-
   }
 
   @media (min-width: $tablet-width) {
@@ -151,17 +134,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 40px;
-
-
   }
 
 
   @media (min-width: $desktop-width) {
     width: 285px;
     padding: 60px;
-
-
   }
 }
-
 

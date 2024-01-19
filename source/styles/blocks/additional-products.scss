@@ -1,17 +1,11 @@
 .additional-products {
   @media (min-width: $tablet-width) {
     display: grid;
-
-
-	}
+  }
 
   @media (min-width: $desktop-width) {
     width: 895px;
-
-
-	}
-
-
+  }
 }
 
 
@@ -27,57 +21,44 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-	}
-
-
+  }
 }
 
 .additional-products__item {
+  @media (max-width: $mobile-width-only) {
+    padding: 13px 0 19px;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 37px 27px;
+    border-bottom: 1px solid $special_dark-grey-4;
+    border-left: 1px solid $special_dark-grey-4;
+    border-right: 1px solid $special_dark-grey-4;
 
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 23px;
+  }
 
-@media (max-width: $mobile-width-only) {
-  padding: 13px 0 19px;
-  border-bottom: 1px solid #cdcdcd;
-  display: flex;
-  flex-direction: column;
-  row-gap: 14px;
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 12px 0;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    border-left: 0;
+    border-right: 0;
 
-}
+    align-items: center;
 
-@media (min-width: $tablet-width) {
-  padding: 25px 37px 27px;
-  border-bottom: 1px solid $special_dark-grey-4;
-  border-left: 1px solid $special_dark-grey-4;
-  border-right: 1px solid $special_dark-grey-4;
-
-
- display: grid;
- grid-template-columns: repeat(2,1fr);
-  row-gap: 23px;
-
-
-}
-
-@media (min-width: $desktop-width) {
-  padding: 10px 0 12px 0;
-  // padding-top: 5px;
-  // padding-bottom: 5px;
-  border-left: 0;
-  border-right: 0;
-
-  align-items: center;
-
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  row-gap: 5px;
-  column-gap: 40px;
-
-}
-
-
-
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-gap: 40px;
+  }
 }
 
 .additional-products__info {
@@ -100,21 +81,13 @@
 
     font-size: 16px;
     line-height: 20px;
-
-
-	}
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     column-gap: 0;
-
-	}
-
+  }
 }
-
-
-
-
 
 
 .additional-products__link {
@@ -122,9 +95,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: span 1;
-
-	}
+  }
 }
-
-
 
