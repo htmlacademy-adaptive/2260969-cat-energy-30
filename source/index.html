@@ -52,18 +52,20 @@
     <h1 class="visually-hidden">Cat Energy - продажа функционального питания для котов</h1>
     <section class="hero">
       <div class="hero__wrapper">
-        <h2 class="hero__title">Функциональное питание для котов</h2>
-        <div class="hero__description">
-          Занялся собой? Займись котом!
+        <div class="hero__container">
+          <h2 class="hero__title">Функциональное питание для котов</h2>
+          <div class="hero__description">
+            Занялся собой? Займись котом!
+          </div>
+          <a class="hero__link button button--primary" href="#">
+            подобрать программу
+          </a>
         </div>
         <picture>
           <source width="559" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Energy Pro со вкусом курицы.">
         </picture>
-        <a class="hero__link button button--primary" href="#">
-          подобрать программу
-        </a>
       </div>
     </section>
     <section class="product-use-cases">
@@ -106,16 +108,30 @@
     </section>
     <section class="product-use-example">
       <div class="product-use-example__wrapper">
-        <h2 class="product-use-example__title">Живой пример</h2>
-        <p class="product-use-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="product-use-example__data">
-          <dt>5 кг</dt>
-          <dd>снижение веса</dd>
-          <dt>60 дней</dt>
-          <dd>затрачено времени</dd>
-        </dl>
-        <p class="product-use-example__expenses">Затраты на питание: 15 000 руб.</p>
-        <div class="compare-slider">
+        <div class="product-use-example__content">
+          <h2 class="product-use-example__title">Живой пример</h2>
+          <p class="product-use-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <!-- <dl class="product-use-example__data">
+            <dt>5 кг</dt>
+            <dd>снижение веса</dd>
+            <dt>60 дней</dt>
+            <dd>затрачено времени</dd>
+          </dl>
+          <p class="product-use-example__expenses">Затраты на питание: 15 000 руб.</p> -->
+
+          <div class="example__statistics product-use-example__data">
+            <p class="example__number product-use-example__number">5 кг
+              <span class="example__description product-use-example__goal">снижение веса</span>
+            </p>
+            <p class="example__number product-use-example__number">60 дней
+              <span class="example__description product-use-example__goal">затрачено времени</span>
+            </p>
+            <p class="example__spending product-use-example__expenses">Затраты на питание:
+              <span>15 000 руб.</span>
+            </p>
+          </div>
+        </div>
+        <div class="product-use-example__compare-slider compare-slider">
             <picture>
               <source width="560" height="512" media="(min-width:768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x" type="image/png">
               <img class="compare-slider__image compare-slider__image--before" width="280" height="256" alt="Кот до приема корма Cat Energy" src="images/cat-before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x">
