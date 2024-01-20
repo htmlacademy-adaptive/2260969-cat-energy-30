@@ -5,15 +5,7 @@
     display: none; // временно скрываем выпадающее меню
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-bottom: 25px;
-  }
 }
 
 .main-nav__list {
@@ -23,30 +15,17 @@
     left: -20px;
 
     background-color: $basic-white;
+
     //outline: 5px solid rgba(173, 243, 9, 0.8);
     //outline-offset: -5px;
   }
 
-
-  // @media (min-width: $tablet-width) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
 }
 
 .main-nav__toggle {
   align-self: center;
-
-  //padding-top: 40px;
-  //padding-bottom: 20px;
-
   width: 24px;
   height: 38px;
-
-  //   position: absolute;
-
-  //  top: 0;
-  //   right: 0;
 
   @media (min-width: $tablet-width) {
     display: none;

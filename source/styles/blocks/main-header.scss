@@ -20,12 +20,17 @@
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $basic-grey;
+    padding-top: 13px;
+    padding-bottom: 15px;
   }
 
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
     // outline: 5px solid rgba(12, 234, 178, 0.8);
     // outline-offset: -5px;
 
@@ -37,6 +42,9 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+
     // outline: 5px solid rgba(237, 138, 8, 0.8);
     // outline-offset: -5px;
 
@@ -53,20 +61,9 @@
   // outline: 5px solid rgba(91, 25, 216, 0.8);
   // outline-offset: -5px;
 
-  @media (max-width: $mobile-width-only) {
-    padding-top: 13px;
-    padding-bottom: 15px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
 
   @media (min-width: $desktop-width) {
 
-    padding-top: 55px;
-    padding-bottom: 25px;
   }
 }
 
