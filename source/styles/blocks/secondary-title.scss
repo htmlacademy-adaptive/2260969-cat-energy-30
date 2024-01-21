@@ -1,0 +1,36 @@
+
+
+.secondary-title {
+  position: relative;
+
+}
+
+
+.secondary__text {
+  display: inline-block;
+//background-color: $basic-white;
+background-color: #ccc;
+
+
+margin-bottom: 35px;
+// margin-left: -15px;
+
+@media (min-width: $tablet-width) {
+
+  margin-bottom: 76px;
+//  margin-left: -15px;
+}
+
+
+}
+
+.secondary-title::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $brand-primary-color;
+  top: 20px;
+  right: 0;
+  z-index: -1;
+}
