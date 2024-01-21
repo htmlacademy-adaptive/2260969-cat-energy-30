@@ -82,6 +82,7 @@
 
   @media (min-width: $tablet-width) {
   max-width: 417px;
+  padding-left: 65px;
   padding-bottom: 462px;
 
 	}
@@ -163,8 +164,7 @@
 @media (min-width: $desktop-width) {
   top: 29px;
   width: 552px;
- // left: 448px;
- left: 52%;
+  left: 58%;
 
 
 }
