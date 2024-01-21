@@ -34,7 +34,13 @@
   }
 }
 
-.logo__image-text {
+.main-header__logo .logo__image-text {
+
+@media (max-width: $mobile-width-only) {
+
+  margin-left: 40px;
+
+}
 
 
 }

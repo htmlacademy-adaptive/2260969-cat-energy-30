@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,6 +15,8 @@
   margin: 0 auto;
   // outline: 5px solid rgba(255, 0, 0, 0.8);
   // outline-offset: -5px;
+
+  position: relative;
 
 
   @media (max-width: $mobile-width-only) {
@@ -57,7 +58,7 @@
 
 .main-header__logo {
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   // outline: 5px solid rgba(91, 25, 216, 0.8);
   // outline-offset: -5px;
 
