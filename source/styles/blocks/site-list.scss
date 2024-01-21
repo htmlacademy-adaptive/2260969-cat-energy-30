@@ -51,7 +51,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $basic-white;
     font-size: 20px;
     line-height: 20px;
 
@@ -68,6 +67,8 @@
 }
 
 
+
+
 .site-list__link--active {
   @media (min-width: $tablet-width) {
     text-decoration: underline;
@@ -78,11 +79,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-decoration: underline;
-    text-decoration-color: $basic-white;
-    text-decoration-thickness: 2px;
-    text-underline-position: under;
     text-underline-offset: 8px;
   }
 }
 
+
+.site-list__link--index {
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+    text-decoration-color: $basic-white;
+  }
+
+
+}
