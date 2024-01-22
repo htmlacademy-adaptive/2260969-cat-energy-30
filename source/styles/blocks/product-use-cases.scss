@@ -282,6 +282,12 @@
 
 
     transition: 0.4s ease-in-out;
+
+    @media (max-width: $mobile-width-only) {
+      top: 19px;
+      left: 88px;
+
+    }
   }
 
 
