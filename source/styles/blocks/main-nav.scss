@@ -1,8 +1,17 @@
 .main-nav {
-  position: relative;
+
 
   @media (max-width: $mobile-width-only) {
-   // display: none; // временно скрываем выпадающее меню
+    //display: none; // временно скрываем выпадающее меню
+
+    position: absolute;
+
+    top: 70px;
+     left: 0;
+
+     z-index: 1;
+
+     width: 100%;
   }
 
 
@@ -10,56 +19,16 @@
 
 .main-nav__list {
   @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 0;
-    left: -20px;
+//     position: absolute;
+//  top: 70px;
+//     left: 0;
+// z-index: 1;
 
     background-color: $basic-white;
-    z-index: 1;
+
 
     //outline: 5px solid rgba(173, 243, 9, 0.8);
     //outline-offset: -5px;
   }
 
-}
-
-.main-nav__toggle {
-  position: absolute;
-  top: -45px;
-  right: 0;
-
-  width: 24px;
-  height: 38px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav__toggle--open {
-  mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
-  background-color: $basic-black;
-  mask-size: 24px 18px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.main-nav__toggle--close {
-  mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
-  background-color: $basic-black;
-  mask-size: 18px 18px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

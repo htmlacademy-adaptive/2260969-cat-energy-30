@@ -1,0 +1,49 @@
+.toggle {
+  display: none;
+
+
+
+
+}
+
+.toggle__item {
+
+  width: 24px;
+  height: 38px;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+  //  .toggle--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
+
+.toggle--open {
+  mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
+  background-color: $basic-black;
+  mask-size: 24px 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+  //  .toggle--close - отображает крестик, при клике по мену список меню скрывается
+
+.toggle--close {
+  mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
+  background-color: $basic-black;
+  mask-size: 18px 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

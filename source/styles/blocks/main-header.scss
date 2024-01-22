@@ -1,7 +1,9 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
   justify-content: space-between;
+
+  position: relative;
 
 
   @media (min-width: $tablet-width) {
@@ -13,16 +15,22 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+
+  position: relative;
+
   // outline: 5px solid rgba(255, 0, 0, 0.8);
   // outline-offset: -5px;
 
-  position: relative;
+
+
 
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $basic-grey;
     padding-top: 13px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
   }
 
 
@@ -58,13 +66,16 @@
 
 .main-header__logo {
   display: flex;
-  //justify-content: space-between;
+
   // outline: 5px solid rgba(91, 25, 216, 0.8);
   // outline-offset: -5px;
 
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
+
+.main-header__toggle {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

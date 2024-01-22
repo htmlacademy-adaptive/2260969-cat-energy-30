@@ -249,6 +249,10 @@
 
   position: relative;
 
+   &:active {
+    opacity: 0.3;
+  }
+
 
   @media (max-width: $mobile-width-only) {
     padding-top: 15px;
@@ -263,8 +267,10 @@
 
   &::after {
     content: " ";
+    position: absolute;
+    top: 11px;
+    left: 120px;
 
-    display: inline-block;
     width: 62px;
     height: 10px;
 
@@ -272,8 +278,7 @@
 
     mask-image: url("../../images/icons/stack.svg#arrow");
     mask-repeat: no-repeat;
-
-    mask-position: -8px;
+    mask-position-x: -10px;
 
 
     transition: 0.4s ease-in-out;
