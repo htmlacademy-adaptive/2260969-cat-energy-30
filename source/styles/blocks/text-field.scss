@@ -16,6 +16,18 @@
   padding: 13px 0 13px 15px;
   width: 100%;
 
+
+
+  &:hover {
+    outline: 1px solid $special_dark-grey-4;
+
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey-1;
+
+  }
+
   @media (min-width: $tablet-width) {
 
     font-size: 20px;

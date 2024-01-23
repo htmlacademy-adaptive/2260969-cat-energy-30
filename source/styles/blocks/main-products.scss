@@ -23,6 +23,8 @@
 
 
 .main-products__item {
+
+
   @media (max-width: $mobile-width-only) {
     margin-bottom: 25px;
 
@@ -45,7 +47,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    // display: flex;
   }
 
   // outline: 5px solid rgba(237, 8, 8, 0.8);
@@ -56,6 +57,12 @@
 .main-products__item a {
   text-decoration: none;
 }
+
+.main-products__image {
+  margin-bottom: 40px;
+  order: -1;
+}
+
 
 .main-products__image img {
   display: block;

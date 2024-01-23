@@ -27,7 +27,7 @@
         </a>
       </div>
         <div class="main-header__toggle toggle">
-          <button class="toggle__item toggle--close" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+          <button class="toggle__item toggle__item--close" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         </div>
         <nav class="main-nav">
             <ul class="main-nav__list site-list">
@@ -60,62 +60,65 @@
         <h1 class="questionnaire__title">Подбор программы</h1>
         <p class="questionnaire__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form class="programs-filter" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="programs-filter__filter-group">
-            <legend class="visually-hidden">Сведения о питомце</legend>
-              <ul class="filter-group">
-                  <li class="filter-group__option text-field">
-                    <label>
-                      <span>Имя:*</span>
-                      <input class="text-field__input" type="text" name="cat-name" placeholder="барсик" required>
-                    </label>
-                  </li>
-                  <li class="filter-group__option text-field">
-                    <label>
-                      <span>Вес (кг):*</span>
-                      <input class="text-field__input" type="text" name="cat-weight" placeholder="7" required>
-                    </label>
-                  </li>
-                  <li class="filter-group__option text-field">
-                    <label>
-                      <span>Возраст (лет):</span>
-                      <input class="text-field__input" type="text" name="cat-age" placeholder="7">
-                    </label>
-                  </li>
+
+          <div class="questionnaire__group">
+            <fieldset class="programs-filter__filter-group">
+              <legend class="visually-hidden">Сведения о питомце</legend>
+                <ul class="filter-group filter-group__pet-info">
+                    <li class="filter-group__option text-field">
+                      <label>
+                        <span>Имя:*</span>
+                        <input class="text-field__input" type="text" name="cat-name" placeholder="барсик" required>
+                      </label>
+                    </li>
+                    <li class="filter-group__option text-field">
+                      <label>
+                        <span>Вес (кг):*</span>
+                        <input class="text-field__input" type="text" name="cat-weight" placeholder="7" required>
+                      </label>
+                    </li>
+                    <li class="filter-group__option text-field">
+                      <label>
+                        <span>Возраст (лет):</span>
+                        <input class="text-field__input error" type="text" name="cat-age" placeholder="7">
+                      </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="programs-filter__filter-group programs-filter__filter-group--border">
+              <legend class="visually-hidden">Выбор программы питания</legend>
+              <ul class="filter-group filter-group__nutrition-program">
+                <li class="filter-group__option radio-field">
+                  <label class="control">
+                    <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
+                    <span class="control__mark control__mark--radio-field"></span>
+                    <span>Похудение</span>
+                  </label>
+                </li>
+                <li class="filter-group__option radio-field">
+                  <label class="control">
+                    <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
+                    <span class="control__mark control__mark--radio-field"></span>
+                    <span>Набор массы</span>
+                  </label>
+                </li>
+                <li class="filter-group__option radio-field">
+                  <label class="control">
+                    <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice" disabled>
+                    <span class="control__mark control__mark--radio-field"></span>
+                    <span>Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
               </ul>
-          </fieldset>
-          <fieldset class="programs-filter__filter-group programs-filter__filter-group--border">
-            <legend class="visually-hidden">Выбор программы питания</legend>
-            <ul class="filter-group">
-              <li class="filter-group__option radio-field">
-                <label>
-                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-loss" id="filter-weight-loss" checked>
-                  <span class="control__mark control__mark--radio-field"></span>
-                  <span>Похудение</span>
-                </label>
-              </li>
-              <li class="filter-group__option radio-field">
-                <label>
-                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="weight-gain" id="filter-weight-gain">
-                  <span class="control__mark control__mark--radio-field"></span>
-                  <span>Набор массы</span>
-                </label>
-              </li>
-              <li class="filter-group__option radio-field">
-                <label>
-                  <input class="visually-hidden radio-field__input" type="radio" name="purpose-group" value="purpose-advice" id="filter-advice">
-                  <span class="control__mark control__mark--radio-field"></span>
-                  <span>Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="programs-filter__filter-group">
               <legend class="programs-filter__title">Контактные данные (владельца кота)</legend>
-              <ul class="filter-group">
+              <ul class="filter-group filter-group__owner-info">
                   <li class="filter-group__option">
                     <label>
                       <span>E-mail:*</span>
-                      <input class="filter-group__email-input" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
+                      <input class="filter-group__email-input filter-group__email-input--error error" type="email" name="cat-owner-email" placeholder="кuklachev@gmail.com" required>
                     </label>
                   </li>
                   <li class="filter-group__option">
@@ -134,7 +137,7 @@
           </fieldset>
           <fieldset class="programs-filter__filter-group">
               <legend class="programs-filter__title">Дополнительно</legend>
-              <ul class="filter-group filter-group--row filter-group--column">
+              <ul class="filter-group filter-group__additional">
                 <li class="filter-group__option checkbox-field">
                   <label class="control">
                     <input class="visually-hidden checkbox-field__input" type="checkbox" name="sweetener" checked>
@@ -157,7 +160,7 @@
                   </label>
                 </li>
                 <li class="filter-group__option checkbox-field">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden checkbox-field__input" type="checkbox" name="vitamins">
                     <span class="control__mark"></span>
                     <span>Витамины</span>

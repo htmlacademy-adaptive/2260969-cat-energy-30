@@ -4,7 +4,46 @@
   padding: 0;
 
   display: grid;
-  gap: 24px;
+}
+
+.filter-group__pet-info {
+  gap: 14px;
+}
+
+.filter-group__nutrition-program {
+  gap: 21px;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      top: -20px;
+    }
+    &::after {
+      bottom: -20px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      left: -20px;
+      background-color: $special_dark-grey-6;
+
+    }
+  }
+}
+
+.filter-group__owner-info {
+  gap: 14px;
+
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+	}
+
+  
 }
 
 .filter-group__option {
@@ -24,7 +63,7 @@
   text-transform: uppercase;
 
   border: 0;
-  outline: 1px solid $special_dark-grey-4;
+  outline: 1px solid $special_dark-grey-5;
   padding: 13px 37px 13px 15px;
   width: 100%;
 
@@ -32,7 +71,30 @@
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
-  background-size: 20px 20px;
+  background-size: 22px 22px;
+
+  &:hover {
+    outline: 1px solid $special_dark-grey-4;
+  }
+
+  &:focus {
+    background-image: url("../../images/icons/stack.svg#email-focus");
+    outline: 2px solid $special_dark-grey-1;
+   // background-size: 20px 20px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+
+	}
+
+}
+
+.filter-group__email-input--error {
+  background-image: url("../../images/icons/stack.svg#email-error");
+ // background-size: 20px 20px;
 }
 
 
@@ -46,7 +108,7 @@
   position: relative;
 
   border: 0;
-  outline: 1px solid #e7e7e7;
+  outline: 1px solid $special_dark-grey-5;
   padding: 13px 0 13px 15px;
   width: 100%;
 
@@ -54,8 +116,33 @@
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
-  background-size: 20px 20px;
+  background-size: 22px 22px;
+
+  &:hover {
+    outline: 1px solid $special_dark-grey-4;
+
+  }
+
+  &:focus {
+    background-image: url("../../images/icons/stack.svg#phone-focus");
+    outline: 2px solid $special_dark-grey-1;
+  //  background-size: 18px 18px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+
+	}
+
 }
+
+
+.filter-group__tel-input--error {
+  background-image: url("../../images/icons/stack.svg#phone-error");
+}
+
 
 .filter-group__textarea {
   margin: 0;
@@ -73,23 +160,38 @@
   text-transform: uppercase;
 }
 
-.filter-group--column {
+.filter-group__additional {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
 
-.filter-group--row {
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    gap: 35px;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 45px;
+
+	}
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-  }
 }
 
+}
+
+
+
+
 .filter-group__option.checkbox-field {
-  @media (min-width: $tablet-width) {
-    width: 48%;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 48%;
+  // }
 
   @media (min-width: $desktop-width) {
     width: auto;
