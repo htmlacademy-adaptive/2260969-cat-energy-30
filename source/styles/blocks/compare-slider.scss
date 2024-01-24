@@ -66,6 +66,13 @@
     background-color: $brand-primary-color;
   }
 
+  &:active::before,
+  &:active::after {
+    background-color: $brand-secondary-color;
+    opacity: 0.6;
+  }
+
+
 }
 
 .compare-slider__control:hover .compare-slider__thumb {

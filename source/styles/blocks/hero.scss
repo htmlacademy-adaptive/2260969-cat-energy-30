@@ -61,23 +61,20 @@
 
   position: relative;
 
- // outline: 5px solid rgba(255, 0, 0, 0.8);
- // outline-offset: -5px;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
 
-  //  outline: 5px solid rgba(12, 234, 178, 0.8);
-  //  outline-offset: -5px;
+
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
 
-  //  outline: 5px solid rgba(237, 138, 8, 0.8);
-  //  outline-offset: -5px;
+
   }
 }
 .hero__container {
@@ -177,10 +174,10 @@
 
 
 .hero__link {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
 

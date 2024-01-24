@@ -1,5 +1,4 @@
 .product-use-example {
- // background-color: $special_dark-grey-7;
   position: relative;
 }
 
@@ -22,7 +21,6 @@
 
 }
 
-
 @media (min-width: $desktop-width) {
   .product-use-example::after {
     top: 165px;
@@ -36,22 +34,15 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
- // outline: 5px solid rgba(255, 0, 0, 0.8);
- // outline-offset: -5px;
-
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
-  //  outline: 5px solid rgba(12, 234, 178, 0.8);
-  //  outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
-  //  outline: 5px solid rgba(237, 138, 8, 0.8);
-  //  outline-offset: -5px;
   }
 }
 
@@ -61,24 +52,24 @@
     padding: 30px 0 75px;
     justify-content: space-between;
 	}
-
 }
 
-
 .product-use-example__content {
+  padding-top: 20px;
+
+
   @media (min-width: $desktop-width) {
     width: 433px;
-
 	}
 
 }
 
 .product-use-example__compare-slider {
+  margin-top: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-
-
 	}
 }
 
@@ -130,7 +121,7 @@
 
 .product-use-example__data {
 
-  row-gap: 34px;
+
 
 @media (min-width: $tablet-width) {
   margin-bottom: 104px;
@@ -153,9 +144,8 @@ justify-content: space-between;
 
 
 .product-use-example__inner {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     row-gap: 34px;
 
@@ -211,6 +201,7 @@ justify-content: space-between;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -240,7 +231,7 @@ justify-content: space-between;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-
+  padding: 0 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

@@ -1,9 +1,6 @@
 .toggle {
   display: none;
 
-
-
-
 }
 
 .toggle__item {
@@ -16,7 +13,6 @@
     display: none;
   }
 }
-  //  .toggle--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
 
 .toggle__item--open {
   mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
@@ -32,7 +28,7 @@
   }
 }
 
-  //  .toggle--close - отображает крестик, при клике по мену список меню скрывается
+
 
 .toggle__item--close {
   mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
