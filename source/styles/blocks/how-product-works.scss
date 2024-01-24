@@ -32,6 +32,8 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     margin-bottom: 72px;
   }
 }
@@ -73,11 +75,11 @@
 }
 
 .how-product-works__list p {
-  margin: 0;
+ padding: 0 30px 0 0;
 
-  @media (max-width: $mobile-width-only) {
-  }
+
 }
+
 
 
 .how-product-works__description {
@@ -87,6 +89,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+  }
 
   &::before {
     content: " ";
@@ -102,10 +110,12 @@
       width: 80px;
       height: 80px;
     }
+
+
   }
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       right: 0;
