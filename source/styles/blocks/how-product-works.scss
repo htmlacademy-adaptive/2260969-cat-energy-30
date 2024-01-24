@@ -4,27 +4,20 @@
 
 .how-product-works__wrapper {
   width: 280px;
-  padding: 0 20px;
   margin: 0 auto;
   margin-bottom: 50px;
-  // outline: 5px solid rgba(255, 0, 0, 0.8);
-  // outline-offset: -5px;
 
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
     margin-bottom: 60px;
-    //  outline: 5px solid rgba(12, 234, 178, 0.8);
-    //  outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
     margin-bottom: 70px;
-    //  outline: 5px solid rgba(237, 138, 8, 0.8);
-    //  outline-offset: -5px;
   }
 }
 
@@ -57,7 +50,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -81,12 +73,9 @@
 }
 
 .how-product-works__list p {
-
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-
-
   }
 }
 
@@ -138,7 +127,6 @@
 
   @media (min-width: 768px) {
     &::after {
-
       content: "1";
     }
   }
@@ -149,7 +137,6 @@
 
   @media (min-width: 768px) {
     &::after {
-
       content: "2";
     }
   }
@@ -160,7 +147,6 @@
 
   @media (min-width: 768px) {
     &::after {
-
       content: "3";
     }
   }
@@ -171,7 +157,6 @@
 
   @media (min-width: 768px) {
     &::after {
-
       content: "4";
     }
   }
