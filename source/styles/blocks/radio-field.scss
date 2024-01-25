@@ -3,7 +3,6 @@
   padding-left: 36px;
 }
 
-
 .radio-field label {
   cursor: pointer;
 }
@@ -13,31 +12,17 @@
   content: "";
   position: absolute;
   left: 0;
-  //top: -1px;
   width: 30px;
   height: 30px;
-  outline: 2px solid $special_dark-grey-4;
+  outline: 2px solid $special-dark-grey-4;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-
     width: 40px;
     height: 40px;
   }
 
-  &:hover::before {
-    // border: 2px solid red;
-  }
-
-  // &:active::before {
-  //   opacity: 0.3;
-  // }
 }
-
-// .radio-field__input[type="radio"]:disabled > span {
-//   outline: 2px solid red;
-//   opacity: 0.3;
-// }
 
 
 .radio-field__input:checked + .control__mark::before {
@@ -51,7 +36,6 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-
     top: 6px;
     left: 12px;
 

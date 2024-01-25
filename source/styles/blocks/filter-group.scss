@@ -17,7 +17,7 @@
   text-transform: uppercase;
 
   border: 0;
-  outline: 1px solid $special_dark-grey-5;
+  outline: 1px solid $special-dark-grey-5;
   padding: 13px 37px 13px 15px;
   width: 100%;
 
@@ -28,12 +28,12 @@
   background-size: 22px 22px;
 
   &:hover {
-    outline: 1px solid $special_dark-grey-4;
+    outline: 1px solid $special-dark-grey-4;
   }
 
   &:focus {
     background-image: url("../../images/icons/stack.svg#email-focus");
-    outline: 2px solid $special_dark-grey-1;
+    outline: 2px solid $special-dark-grey-1;
   }
 
 
@@ -58,7 +58,7 @@
   position: relative;
 
   border: 0;
-  outline: 1px solid $special_dark-grey-5;
+  outline: 1px solid $special-dark-grey-5;
   padding: 13px 37px 13px 15px;
   width: 100%;
 
@@ -74,12 +74,12 @@
   }
 
   &:hover {
-    outline: 1px solid $special_dark-grey-4;
+    outline: 1px solid $special-dark-grey-4;
   }
 
   &:focus {
     background-image: url("../../images/icons/stack.svg#phone-focus");
-    outline: 2px solid $special_dark-grey-1;
+    outline: 2px solid $special-dark-grey-1;
    }
 
 
@@ -92,14 +92,7 @@
 }
 
 
-
-
-
 .filter-group__option.checkbox-field {
-  // @media (min-width: $tablet-width) {
-  //   width: 48%;
-  // }
-
   @media (min-width: $desktop-width) {
     width: auto;
   }

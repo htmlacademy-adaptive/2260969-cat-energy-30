@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     z-index: -1;
-    background-color: $special_dark-grey-7;
+    background-color: $special-dark-grey-7;
   }
 }
 
@@ -94,7 +94,7 @@
 }
 
 .product-use-example__description {
-  color: $special_dark-grey-1;
+  color: $special-dark-grey-1;
   font-family: $primary-font-family;
   font-size: 14px;
   font-style: normal;
@@ -159,7 +159,7 @@
 .product-use-example__item {
   padding: 13px 0 17px;
   position: relative;
-  border: 1px solid $special_dark-grey-4;
+  border: 1px solid $special-dark-grey-4;
   border-radius: 3px;
   box-sizing: border-box;
 
@@ -222,14 +222,14 @@
   top: 46px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: $special_dark-grey-7;
+  background-color: $special-dark-grey-7;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $special_dark-grey-7;
+    background-color: $special-dark-grey-7;
   }
 }
 

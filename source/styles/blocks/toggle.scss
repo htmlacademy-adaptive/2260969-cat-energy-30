@@ -1,14 +1,11 @@
 .toggle {
 
-
 }
 
 .toggle__item {
 
   width: 24px;
   height: 38px;
-
-
   @media (min-width: $tablet-width) {
     display: none;
   }

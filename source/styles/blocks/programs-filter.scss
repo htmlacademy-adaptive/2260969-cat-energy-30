@@ -62,7 +62,6 @@
   padding: 0;
 
   margin-bottom: 55px;
-  //position: relative;
 }
 
 
@@ -71,7 +70,7 @@
 
   @media (min-width: $tablet-width) {
 
-    outline: 1px solid $special_dark-grey-4;
+    outline: 1px solid $special-dark-grey-4;
     padding: 23px 27px 27px 27px;
   }
 }
@@ -116,7 +115,7 @@
       width: 100vw;
       height: 1px;
       left: -20px;
-      background-color: $special_dark-grey-6;
+      background-color: $special-dark-grey-6;
     }
   }
 }
@@ -167,7 +166,7 @@
 
 .programs-filter__textarea {
   margin: 0;
-  border: 1px solid $special_dark-grey-4;
+  border: 1px solid $special-dark-grey-4;
   height: 150px;
   width: 100%;
 
@@ -183,11 +182,11 @@
   text-transform: uppercase;
 
   &:hover {
-    outline: 1px solid $special_dark-grey-4;
+    outline: 1px solid $special-dark-grey-4;
   }
 
   &:focus {
-    outline: 2px solid $special_dark-grey-1;
+    outline: 2px solid $special-dark-grey-1;
   }
 
 
