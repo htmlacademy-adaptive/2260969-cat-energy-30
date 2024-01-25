@@ -7,7 +7,6 @@
 }
 
 
-
 .filter-group__email-input {
   color: $special_dark-grey-1;
   font-family: inherit;
@@ -80,10 +79,7 @@
   &:focus {
     background-image: url("../../images/icons/stack.svg#phone-focus");
     outline: 2px solid $special-dark-grey-1;
-   }
-
-
-
+  }
 }
 
 
