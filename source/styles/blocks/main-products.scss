@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    display: flex;
   }
 }
 
@@ -71,6 +72,8 @@
 
     display: flex;
     flex-direction: column;
+
+    justify-content: space-between;
   }
 }
 
