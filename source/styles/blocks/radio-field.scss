@@ -23,25 +23,21 @@
 
     width: 40px;
     height: 40px;
-	}
+  }
 
   &:hover::before {
-    border: 2px solid red;
-
+    // border: 2px solid red;
   }
 
   // &:active::before {
   //   opacity: 0.3;
   // }
-
 }
 
 // .radio-field__input[type="radio"]:disabled > span {
 //   outline: 2px solid red;
 //   opacity: 0.3;
 // }
-
-
 
 
 .radio-field__input:checked + .control__mark::before {
@@ -61,6 +57,6 @@
 
     width: 18px;
     height: 18px;
-	}
+  }
 }
 

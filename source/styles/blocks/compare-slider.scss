@@ -12,11 +12,7 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
-
-
-	}
-
-
+  }
 }
 
 .compare-slider__wrapper {
@@ -41,16 +37,15 @@
     height: 18px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 3;
-    background-color: #666;
+    background-color: #666666;
     mask-image: url("../../images/icons/stack.svg#slider-pointers");
-
   }
 
   &::after {
     content: "";
-    background-color: #666;
+    background-color: #666666;
     border-radius: 2px;
     width: 4px;
     height: 100%;
@@ -71,8 +66,6 @@
     background-color: $brand-secondary-color;
     opacity: 0.6;
   }
-
-
 }
 
 .compare-slider__control:hover .compare-slider__thumb {
@@ -84,10 +77,10 @@
   height: 40px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   background-color: $basic-white;
-  border: 2px solid #666;
+  border: 2px solid #666666;
   border-radius: 50%;
   box-sizing: border-box;
   z-index: 2;

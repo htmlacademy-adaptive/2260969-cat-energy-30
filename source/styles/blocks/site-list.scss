@@ -4,12 +4,11 @@
   padding: 0;
 
   @media (max-width: $mobile-width-only) {
-   width: 100%;
-      display: flex;
- flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
- border-top: 1px solid #e6e6e6;
-
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
@@ -72,8 +71,6 @@
 }
 
 
-
-
 .site-list__link--active {
   @media (min-width: $tablet-width) {
     text-decoration: underline;
@@ -94,6 +91,4 @@
     color: $basic-white;
     text-decoration-color: $basic-white;
   }
-
-
 }

@@ -1,27 +1,24 @@
 .main-nav {
-
   @media (max-width: $mobile-width-only) {
     display: none; //временно скрываем выпадающее меню
 
     position: absolute;
 
     top: 70px;
-     left: 0;
+    left: 0;
 
-     z-index: 1;
+    z-index: 1;
 
-     width: 100%;
+    width: 100%;
   }
-
-
 }
 
 .main-nav__list {
   @media (max-width: $mobile-width-only) {
-//     position: absolute;
-//  top: 70px;
-//     left: 0;
-// z-index: 1;
+    //     position: absolute;
+    //  top: 70px;
+    //     left: 0;
+    // z-index: 1;
 
     background-color: $basic-white;
 
@@ -29,5 +26,4 @@
     //outline: 5px solid rgba(173, 243, 9, 0.8);
     //outline-offset: -5px;
   }
-
 }

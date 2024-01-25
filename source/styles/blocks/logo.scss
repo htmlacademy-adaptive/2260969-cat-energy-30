@@ -15,13 +15,11 @@
   height: 38px;
 
 
-
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
 
     padding-right: 13px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -29,18 +27,12 @@
     height: 59px;
 
     padding-right: 14px;
-
-
   }
 }
 
 .main-header__logo .logo__image-text {
+  @media (max-width: $mobile-width-only) {
 
-@media (max-width: $mobile-width-only) {
-
-  margin-left: 56px;
-
-}
-
-
+    margin-left: 56px;
+  }
 }

@@ -26,15 +26,12 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
-
-
-	}
-
+  }
 }
 
 .copyright__link--htmlcademy-icon {
   @media (min-width: $tablet-width) {
-//    padding-left: 23px;
+    //    padding-left: 23px;
   }
 
 
@@ -49,9 +46,7 @@
     background-color: $special-black;
     mask-repeat: no-repeat;
     mask-position: center;
-
   }
-
 
 
   &:hover::after {
@@ -71,6 +66,5 @@
   @media (min-width: $tablet-width) {
 
     padding-right: 23px;
-
   }
 }

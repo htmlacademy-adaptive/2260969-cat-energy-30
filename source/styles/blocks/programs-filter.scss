@@ -8,7 +8,6 @@
   text-transform: uppercase;
 
 
-
   @media (min-width: $tablet-width) {
 
     font-size: 20px;
@@ -24,21 +23,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  display: inline-block;
+  background-color: $basic-white;
 
-
-
-
-
+  padding: 0 20px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-
+    padding: 0 35px;
     margin-bottom: 76px;
 
   }
 }
-
-
 
 
 .programs-filter__required-fields {
@@ -62,18 +58,16 @@
 
 .programs-filter__filter-group {
   border: 0;
-padding: 0;
+  padding: 0;
 
   margin-bottom: 55px;
   //position: relative;
 }
 
 
-
-
-
 .programs-filter__filter-group--border {
   position: relative;
+
   @media (min-width: $tablet-width) {
 
     outline: 1px solid $special_dark-grey-4;
@@ -100,5 +94,4 @@ padding: 0;
   right: 0;
   z-index: -1;
 }
-
 

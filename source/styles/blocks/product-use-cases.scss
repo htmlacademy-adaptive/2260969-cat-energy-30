@@ -238,7 +238,7 @@
 
   position: relative;
 
-   &:active {
+  &:active {
     opacity: 0.3;
   }
 
@@ -275,7 +275,6 @@
     @media (max-width: $mobile-width-only) {
       top: 19px;
       left: 88px;
-
     }
   }
 
