@@ -121,8 +121,7 @@
   &:focus {
     background-image: url("../../images/icons/stack.svg#phone-focus");
     outline: 2px solid $special_dark-grey-1;
-    //  background-size: 18px 18px;
-  }
+   }
 
 
   @media (min-width: $tablet-width) {
@@ -142,16 +141,27 @@
   border: 1px solid $special_dark-grey-4;
   height: 150px;
   width: 100%;
-}
 
-.filter-group__textarea::placeholder {
+  padding: 10px;
+
   font-family: $secondary-font-family;
   color: $special-dark-grey-1;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+  }
+
 }
+
+
 
 .filter-group__additional {
   display: flex;
