@@ -46,19 +46,24 @@
   }
 }
 
-.contacts iframe {
+.contacts__map {
   width: 100%;
-  height: 362px;
-  border: none;
-  display: block;
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
+
 }
 
-.contacts__map-image {
-  display: block;
+.contacts iframe {
+  width: 100%;
+  min-height: 362px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts__invitation {
