@@ -79,14 +79,12 @@
   &:focus {
     background-image: url("../../images/icons/stack.svg#phone-focus");
     outline: 2px solid $special-dark-grey-1;
-
   }
 }
 
 
 .filter-group__tel-input--error {
   background-image: url("../../images/icons/stack.svg#phone-error");
-
 }
 
 
