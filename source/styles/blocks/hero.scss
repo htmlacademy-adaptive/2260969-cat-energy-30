@@ -1,7 +1,7 @@
 .hero {
   @media (max-width: $mobile-width-only) {
-
     position: relative;
+
 
     &::before {
       content: "";
@@ -14,10 +14,19 @@
       top: 0;
 
       z-index: -1;
-      background-image: image-set("../../images/cat-background-mobile@1x.jpg" 1x, "../../images/cat-background-mobile@2x.jpg" 2x);
+    background-image: url("../../images/cat-background-mobile@1x.jpg");
       background-position: center center;
       background-repeat: no-repeat;
     }
+
+  }
+
+  @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../../images/cat-background-mobile@2x.jpg");
+      background-size: 320px 302px;
+    }
+
   }
 
 
@@ -35,14 +44,22 @@
 
       z-index: -1;
       left: 50%;
-      background-image: image-set("../../images/cat-background-desktop@1x.jpg" 1x, "../../images/cat-background-desktop@2x.jpg" 2x);
-
+      background-image: url("../../images/cat-background-desktop@1x.jpg");
       background-position: right bottom;
       background-repeat: no-repeat;
 
       background-color: $special_dark-green-1;
     }
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../../images/cat-background-desktop@2x.jpg");
+      background-size: 720px 694px;
+
+    }
+  }
+
 }
 
 .hero__wrapper {
@@ -169,4 +186,3 @@
     width: 244px;
   }
 }
-
