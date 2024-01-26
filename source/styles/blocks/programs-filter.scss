@@ -67,6 +67,15 @@
 .programs-filter__filter-group--border {
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $special-dark-grey-5;
+    border-bottom: 1px solid $special-dark-grey-5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+  }
+
   @media (min-width: $tablet-width) {
 
     outline: 1px solid $special-dark-grey-4;
@@ -98,25 +107,6 @@
 .programs-filter__nutrition-program {
   gap: 21px;
 
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      top: -20px;
-    }
-
-    &::after {
-      bottom: -20px;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 1px;
-      left: -20px;
-      background-color: $special-dark-grey-6;
-    }
-  }
 }
 
 .programs-filter__owner-info {
