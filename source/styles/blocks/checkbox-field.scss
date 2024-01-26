@@ -31,12 +31,12 @@
 }
 
 
-.control__mark-checkbox:hover::before  {
+.control__mark-checkbox:hover::before {
   outline: 2px solid $special-dark-grey-9;
 }
 
 .control__mark-checkbox:active::before {
- outline: 2px solid $special-dark-grey-10;
+  outline: 2px solid $special-dark-grey-10;
 }
 
 

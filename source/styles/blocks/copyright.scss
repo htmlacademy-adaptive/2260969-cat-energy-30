@@ -1,9 +1,3 @@
-.copyright {
-
-
-}
-
-
 .copyright__link {
   color: $special-dark-grey-1;
   font-family: $primary-font-family;
@@ -30,10 +24,6 @@
 }
 
 .copyright__link--htmlcademy-icon {
-  @media (min-width: $tablet-width) {
-  }
-
-
   &::after {
     content: " ";
 
@@ -63,7 +53,6 @@
 
 .copyright__name {
   @media (min-width: $tablet-width) {
-
     padding-right: 23px;
   }
 }
