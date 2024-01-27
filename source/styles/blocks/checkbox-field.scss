@@ -1,3 +1,51 @@
 .checkbox-field {
+  position: relative;
+  padding-left: 36px;
+}
 
+
+.checkbox-field label {
+  cursor: pointer;
+}
+
+.control__mark-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  outline: 2px solid $special-dark-grey-4;
+}
+
+.checkbox-field__input:checked + .control__mark-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background-image: url("../../images/icons/stack.svg#tick");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+}
+
+
+.control__mark-checkbox:hover::before {
+  outline: 2px solid $special-dark-grey-9;
+}
+
+.control__mark-checkbox:active::before {
+  outline: 2px solid $special-dark-grey-10;
+}
+
+
+.checkbox-field__input:disabled + .control__mark-checkbox::before {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+.checkbox-field__input:disabled ~ span {
+  cursor: no-drop;
+  opacity: 0.3;
 }

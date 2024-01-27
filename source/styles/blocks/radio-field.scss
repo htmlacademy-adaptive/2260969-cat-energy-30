@@ -1,3 +1,37 @@
 .radio-field {
+  position: relative;
+  padding-left: 36px;
+}
 
+.radio-field label {
+  cursor: pointer;
+}
+
+.radio-field__input:checked + .control__mark-radio::before {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: $brand-primary-color;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 12px;
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-field__input:disabled + .control__mark-radio::after {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+.radio-field__input:disabled ~ span {
+  cursor: no-drop;
+  opacity: 0.3;
 }

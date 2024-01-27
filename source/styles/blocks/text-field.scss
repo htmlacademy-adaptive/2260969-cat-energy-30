@@ -1,14 +1,29 @@
-.text-field {
-
-}
-
 .text-field__input {
-  color: $special_dark-grey-1;
+  color: $special-dark-grey-1;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
 
-  width: auto;
+  border: 0;
+  outline: 1px solid $special-dark-grey-5;
+  padding: 13px 0 13px 15px;
+  width: 100%;
+
+
+  &:hover {
+    outline: 1px solid $special-dark-grey-4;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey-1;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 20px;
+    line-height: normal;
+  }
 }

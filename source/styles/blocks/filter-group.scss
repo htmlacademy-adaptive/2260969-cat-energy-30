@@ -3,13 +3,9 @@
   margin: 0;
   padding: 0;
 
+  display: grid;
 }
 
-.filter-group__option {
-  display: flex;
-
-
-}
 
 .filter-group__email-input {
   color: $special_dark-grey-1;
@@ -18,7 +14,38 @@
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
+
+  border: 0;
+  outline: 1px solid $special-dark-grey-5;
+  padding: 13px 37px 13px 15px;
+  width: 100%;
+
+  background-image: url("../../images/icons/stack.svg#email");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: center;
+  background-size: 22px 22px;
+
+  &:hover {
+    outline: 1px solid $special-dark-grey-4;
+  }
+
+  &:focus {
+    background-image: url("../../images/icons/stack.svg#email-focus");
+    outline: 2px solid $special-dark-grey-1;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
+
+.filter-group__email-input--error {
+  background-image: url("../../images/icons/stack.svg#email-error");
+}
+
 
 .filter-group__tel-input {
   color: $special-dark-grey-1;
@@ -28,13 +55,41 @@
   line-height: 18px;
   text-transform: uppercase;
   position: relative;
+
+  border: 0;
+  outline: 1px solid $special-dark-grey-5;
+  padding: 13px 37px 13px 15px;
+  width: 100%;
+
+  background-image: url("../../images/icons/stack.svg#phone");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: center;
+  background-size: 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &:hover {
+    outline: 1px solid $special-dark-grey-4;
+  }
+
+  &:focus {
+    background-image: url("../../images/icons/stack.svg#phone-focus");
+    outline: 2px solid $special-dark-grey-1;
+  }
 }
 
-.filter-group__textarea::placeholder {
-  font-family: $secondary-font-family;
-  color: $special-dark-grey-1;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
+
+.filter-group__tel-input--error {
+  background-image: url("../../images/icons/stack.svg#phone-error");
+}
+
+
+.filter-group__option.checkbox-field {
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }

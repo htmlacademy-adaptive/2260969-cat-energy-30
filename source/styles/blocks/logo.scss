@@ -1,4 +1,6 @@
 .logo {
+  align-self: center;
+
   &:hover {
     opacity: 0.8;
   }
@@ -9,10 +11,28 @@
 }
 
 .logo__image-icon {
+  width: 33px;
+  height: 38px;
 
 
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+
+    padding-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+
+    padding-right: 14px;
+  }
 }
 
-.logo__image-text {
+.main-header__logo .logo__image-text {
+  @media (max-width: $mobile-width-only) {
 
+    margin-left: 56px;
+  }
 }

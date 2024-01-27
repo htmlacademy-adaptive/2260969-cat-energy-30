@@ -3,9 +3,12 @@
   font-family: $secondary-font-family;
   font-size: 16px;
   font-style: normal;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   border: 0;
+  padding: 10px 0;
+  text-decoration: none;
 }
 
 
@@ -26,6 +29,7 @@
 .button--all {
   background-color: $basic-grey;
   color: $special-dark-grey-1;
+  width: 100%;
 
   &:hover {
     background-color: $special-grey;

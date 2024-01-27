@@ -1,0 +1,24 @@
+
+
+.secondary-title {
+  position: relative;
+  overflow: hidden;
+}
+
+.secondary-title::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $brand-primary-color;
+  top: 15px;
+  right: 0;
+  left: 4px;
+  z-index: -1;
+
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+  }
+}
+
