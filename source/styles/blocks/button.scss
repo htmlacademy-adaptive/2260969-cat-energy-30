@@ -34,5 +34,9 @@
   &:hover {
     background-color: $special-grey;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
