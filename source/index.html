@@ -29,12 +29,21 @@
           </a>
         </div>
             <!--
-              toggle__item--close - отображает крестик, при клике по мену список меню скрывается
-            toggle__item--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
-             -->
-          <!-- <div class="main-header__toggle toggle">
-            <button class="toggle__item toggle__item--close" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-          </div> -->
+              Если подключен скрипт, то логика такая: из разметки удаляяется класс toggle--nojs
+              Класс toggle__item--close - отображает крестик, при клике по мену список меню скрывается
+              Класс toggle__item--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
+              В стилях в классе .main-nav добавляется
+                                                      @media (max-width: $mobile-width-only) {
+                                                        position: absolute;
+                                                        top: 70px;
+                                                        left: 0;
+                                                        z-index: 1;
+                                                        width: 100%;
+                                                      }
+            -->
+          <div class="main-header__toggle toggle toggle--nojs toggle__item--close">
+            <span class="toggle__item"><span class="visually-hidden">Открыть меню.</span></span>
+          </div>
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
