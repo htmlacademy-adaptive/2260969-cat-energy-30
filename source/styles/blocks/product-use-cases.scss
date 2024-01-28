@@ -233,8 +233,9 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 11px;
-    left: 120px;
+    top: 19px;
+    left: 95px;
+
 
     width: 62px;
     height: 10px;
@@ -243,20 +244,27 @@
 
     mask-image: url("../../images/icons/stack.svg#arrow");
     mask-repeat: no-repeat;
-    mask-position-x: -10px;
-
+    mask-position-x: -25px;
 
     transition: 0.4s ease-in-out;
 
-    @media (max-width: $mobile-width-only) {
-      top: 19px;
-      left: 88px;
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 120px;
     }
   }
 
 
   &:hover::after {
-    mask-position: center;
+    @media (max-width: $mobile-width-only) {
+      left: 80px;
+      mask-position-x: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 105px;
+      mask-position-x: 0;
+    }
   }
 
   &:active::after {

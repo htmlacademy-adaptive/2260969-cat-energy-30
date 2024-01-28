@@ -3,7 +3,6 @@
   position: relative;
 
   background-color: $basic-grey;
-
 }
 
 
@@ -56,7 +55,7 @@
     background-image: url("../../images/map-mobile@2x.png");
   }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 400px;
     background-image: url("../../images/map-tablet@1x.png");
   }
@@ -67,8 +66,7 @@
 
 
   @media (min-width: $desktop-width) {
-     background-image: url("../../images/map-desktop@1x.png");
-
+    background-image: url("../../images/map-desktop@1x.png");
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
@@ -89,7 +87,6 @@
     min-height: 400px;
   }
 }
-
 
 
 .contacts__invitation {
