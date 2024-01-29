@@ -1,6 +1,7 @@
 .hero {
   @media (max-width: $mobile-width-only) {
     position: relative;
+    padding-top: 5px;
 
 
     &::before {
@@ -99,7 +100,7 @@
   font-style: normal;
   line-height: 36px;
 
-  padding-top: 27px;
+  padding-top: 21px;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {

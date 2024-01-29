@@ -28,8 +28,10 @@
     content: " ";
 
     display: inline-block;
-    height: 27px;
-    width: 34px;
+    // height: 27px;
+    // width: 34px;
+    height: 35px;
+    width: 29px;
 
     mask-image: url("../../images/logo-html-academy.svg");
     background-color: $special-black;
@@ -52,6 +54,10 @@
 }
 
 .copyright__name {
+  @media (max-width: $mobile-width-only) {
+    align-self: center;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 23px;
   }

@@ -53,7 +53,7 @@
 }
 
 .product-use-example__content {
-  padding-top: 20px;
+  padding-top: 22px;
 
 
   @media (min-width: $desktop-width) {
@@ -63,6 +63,7 @@
 
 .product-use-example__compare-slider {
   margin-top: 20px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     display: flex;

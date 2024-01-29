@@ -1,3 +1,8 @@
+span + span.control__mark-radio  {
+  padding-top: 10px;
+}
+
+
 .control__mark-radio::after {
   content: "";
   position: absolute;

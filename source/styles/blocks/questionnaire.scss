@@ -1,8 +1,8 @@
 .questionnaire__wrapper {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 25px;
 
-  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -21,7 +21,12 @@
 
 .questionnaire__group {
   display: grid;
-  gap: 24px;
+  gap: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 45px;
+
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -65,7 +70,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 54px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
 
@@ -85,9 +90,11 @@
 
 .questionnaire__footer {
   @media (max-width: $mobile-width-only) {
-
+margin-top: 10px;
     display: grid;
     row-gap: 21px;
+    margin-top: 16px;
+    padding-bottom: 11px;
   }
 
 
