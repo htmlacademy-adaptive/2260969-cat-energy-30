@@ -18,7 +18,11 @@
 
 
   @media (min-width: $tablet-width) {
-    top: 15px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }
 

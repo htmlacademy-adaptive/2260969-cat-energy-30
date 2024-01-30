@@ -4,7 +4,6 @@
   // right: 10px;
   top: 14px;
   right: 2px;
-
 }
 
 .toggle--nojs {
@@ -27,7 +26,7 @@
 .toggle__item--open {
   mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
   background-color: $basic-black;
- // mask-size: 24px 18px;
+  // mask-size: 24px 18px;
   mask-size: 34px 28px;
 
   &:hover {

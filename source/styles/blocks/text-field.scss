@@ -13,6 +13,11 @@
   width: 100%;
 
 
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+
   &:hover {
     outline: 1px solid $special-dark-grey-4;
   }

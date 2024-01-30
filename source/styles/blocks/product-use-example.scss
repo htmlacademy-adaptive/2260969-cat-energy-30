@@ -47,19 +47,16 @@
 .product-use-example__container {
   @media (min-width: $desktop-width) {
     display: flex;
-   padding: 0;
-   padding-top: 30px;
+    padding: 0;
+    padding-top: 30px;
     justify-content: space-between;
   }
 }
 
 .product-use-example__content {
-
   @media (max-width: $mobile-width-only) {
     padding-top: 21px;
   }
-
-
 
 
   @media (min-width: $desktop-width) {
@@ -130,8 +127,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
-
-     }
+  }
 }
 
 .product-use-example__data {

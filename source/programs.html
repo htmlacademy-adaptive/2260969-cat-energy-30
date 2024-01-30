@@ -36,10 +36,10 @@
             toggle__item--close - отображает крестик, при клике по мену список меню скрывается
           toggle__item--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
           -->
-        <div class="main-header__toggle toggle toggle--nojs toggle__item--close">
+        <div class="main-header__toggle toggle toggle--nojs toggle__item--open">
           <span class="toggle__item"><span class="visually-hidden">Открыть меню.</span></span>
         </div>
-        <!-- <nav class="main-nav">
+        <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">
@@ -57,7 +57,7 @@
               </a>
             </li>
             </ul>
-        </nav> -->
+        </nav>
       </div>
   </header>
   <main class="main-container">
@@ -119,7 +119,7 @@
             </fieldset>
           </div>
           <div class="secondary-title">
-            <fieldset class="programs-filter__filter-group questionnaire__wrapper">
+            <fieldset class="programs-filter__filter-group questionnaire__wrapper questionnaire__wrapper--owner-info">
                 <legend class="programs-filter__title">Контактные данные (владельца кота)</legend>
                 <ul class="filter-group programs-filter__owner-info">
                     <li class="filter-group__option">
@@ -138,7 +138,7 @@
             </fieldset>
           </div>
           <div class="secondary-title">
-            <fieldset class="programs-filter__filter-group questionnaire__wrapper">
+            <fieldset class="programs-filter__filter-group questionnaire__wrapper questionnaire__wrapper--comment">
                 <legend class="programs-filter__title">Комментарий</legend>
                 <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
                 <textarea class="programs-filter__textarea" id="comment" name="comment">Расскажите обо всех повадках кота
@@ -146,7 +146,7 @@
             </fieldset>
           </div>
           <div class="secondary-title">
-            <fieldset class="programs-filter__filter-group questionnaire__wrapper">
+            <fieldset class="programs-filter__filter-group questionnaire__wrapper questionnaire__wrapper--additional">
               <legend class="programs-filter__title">Дополнительно</legend>
               <ul class="filter-group programs-filter__additional">
                 <li class="filter-group__option checkbox-field">
@@ -181,7 +181,7 @@
             </fieldset>
           </div>
           <div class="questionnaire__footer questionnaire__wrapper">
-            <button class="button button--primary" type="submit">Отправить заявку</button>
+            <button class="button button--primary questionnaire__link" type="submit">Отправить заявку</button>
             <span class="programs-filter__required-fields">* — Обязательные поля</span>
           </div>
         </form>

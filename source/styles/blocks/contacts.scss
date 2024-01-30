@@ -108,7 +108,7 @@
     line-height: 26px;
 
     width: 354px;
-    padding-top: 56px;
+    padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 40px;
   }
@@ -141,7 +141,7 @@
 
     width: 354px;
     text-align: right;
-    padding-top: 56px;
+    padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 40px;
   }
@@ -152,7 +152,6 @@
     padding-left: 50px;
     padding-right: 60px;
     text-align: left;
-
   }
 }
 
@@ -164,6 +163,5 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 18px;
-
   }
 }

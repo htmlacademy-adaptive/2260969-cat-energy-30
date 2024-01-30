@@ -15,8 +15,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-
-
   }
 
   @media (min-width: $desktop-width) {
@@ -51,8 +49,6 @@
 
     border-bottom: 1px solid $special-dark-grey-6;
   }
-
-
 }
 
 .main-footer__copyright {
