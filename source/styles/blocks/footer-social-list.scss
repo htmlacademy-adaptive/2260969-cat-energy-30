@@ -8,6 +8,13 @@
   justify-content: space-between;
 
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    align-content: center;
+  margin-left: 33px;
+
+
+  }
 }
 
 .footer-social-list__link {

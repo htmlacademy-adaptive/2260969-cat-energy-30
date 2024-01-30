@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 175px;
+
   }
 }
 
@@ -28,8 +28,6 @@
     content: " ";
 
     display: inline-block;
-    // height: 27px;
-    // width: 34px;
     height: 35px;
     width: 29px;
 
@@ -60,5 +58,6 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 23px;
+    align-self: center;
   }
 }
