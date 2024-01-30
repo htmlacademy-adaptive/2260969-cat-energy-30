@@ -64,6 +64,40 @@
   @media (min-width: $desktop-width) {
     --background-item-size: 70px 97px;
   }
+
+  &::after {
+    content: " ";
+
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+
+    background: var(--background-item) no-repeat center center;
+    background-size: var(--background-item-size);
+
+    @media (max-width: $mobile-width-only) {
+
+      top: 10px;
+      left: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 45px;
+      right: 29px;
+      width: 270px;
+      height: 270px;
+    }
+
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 32px;
+      width: 135px;
+      height: 135px;
+    }
+  }
+
 }
 
 .product-use-cases__item-title--weight-gain {
@@ -77,6 +111,39 @@
   @media (min-width: $desktop-width) {
     --background-item-size: 134px 56px;
   }
+  &::after {
+    content: " ";
+
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+
+    background: var(--background-item) no-repeat center center;
+    background-size: var(--background-item-size);
+
+    @media (max-width: $mobile-width-only) {
+
+      top: 10px;
+      left: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 56px;
+      right: 29px;
+      width: 270px;
+      height: 270px;
+    }
+
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 32px;
+      width: 135px;
+      height: 135px;
+    }
+  }
+
 }
 
 .product-use-cases__item-title {
@@ -140,38 +207,6 @@
   }
 
 
-  &::after {
-    content: " ";
-
-    display: block;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-
-    background: var(--background-item) no-repeat center center;
-    background-size: var(--background-item-size);
-
-    @media (max-width: $mobile-width-only) {
-
-      top: 10px;
-      left: 10px;
-    }
-
-    @media (min-width: $tablet-width) {
-      top: 45px;
-      right: 29px;
-      width: 270px;
-      height: 270px;
-    }
-
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-      left: 32px;
-      width: 135px;
-      height: 135px;
-    }
-  }
 }
 
 
