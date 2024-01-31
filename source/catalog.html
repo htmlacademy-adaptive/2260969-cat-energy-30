@@ -25,12 +25,19 @@
           </picture>
         </a>
         <a class="logo" href="index.html" aria-label="Логотип Cat Energy">
-          <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+          <picture>
+            <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg">
+            <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+          </picture>
         </a>
       </div>
-        <!-- <div class="main-header__toggle toggle">
-          <button class="toggle__item toggle__item--close" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-        </div> -->
+          <!--
+            toggle__item--close - отображает крестик, при клике по мену список меню скрывается
+          toggle__item--open - отображает иконку гамбургера, при клике по нему открывается список пунктов меню
+          -->
+        <div class="main-header__toggle toggle toggle--nojs toggle__item--close">
+          <span class="toggle__item"><span class="visually-hidden">Открыть меню.</span></span>
+        </div>
         <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">

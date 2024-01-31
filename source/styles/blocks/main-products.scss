@@ -53,6 +53,7 @@
   margin: 0 auto;
 }
 
+
 .main-products__wrapper {
   @media (max-width: $mobile-width-only) {
     display: grid;
@@ -98,7 +99,7 @@
 
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 10px;
+    padding-top: 21px;
     padding-bottom: 12px;
     width: 95px;
   }

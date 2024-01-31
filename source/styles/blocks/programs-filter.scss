@@ -24,15 +24,21 @@
   font-weight: 400;
   line-height: 26px;
   display: inline-block;
+  text-transform: none;
   background-color: $basic-white;
 
   padding: 0 20px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
+
+  margin-left: -20px;
 
 
   @media (min-width: $tablet-width) {
-    padding: 0 35px;
-    margin-bottom: 76px;
+    padding: 0 38px;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -35px;
   }
 }
 
@@ -59,8 +65,6 @@
 .programs-filter__filter-group {
   border: 0;
   padding: 0;
-
-  margin-bottom: 55px;
 }
 
 
@@ -84,7 +88,7 @@
 
 .programs-filter__filter-group label {
   display: grid;
-  gap: 14px;
+  gap: 9px;
   grid-template-columns: max-content auto;
   align-items: center;
 }
@@ -103,12 +107,15 @@
 
 
 .programs-filter__nutrition-program {
-  gap: 21px;
+  gap: 15px;
 }
 
 .programs-filter__owner-info {
-  gap: 14px;
+  gap: 9px;
 
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -131,23 +138,28 @@
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
-    gap: 35px;
+    gap: 18px;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px 45px;
+    gap: 35px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 35px 45px;
+
+    column-gap: 80px;
   }
 }
 
 .programs-filter__pet-info {
-  gap: 14px;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+  }
 }
 
 .programs-filter__textarea {
@@ -159,6 +171,9 @@
   outline: 0;
 
   padding: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+
 
   font-family: $secondary-font-family;
   color: $special-dark-grey-1;
@@ -179,5 +194,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    height: 180px;
+
+    margin-bottom: 8px;
   }
 }

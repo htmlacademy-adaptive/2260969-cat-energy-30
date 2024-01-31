@@ -1,6 +1,11 @@
 .checkbox-field {
   position: relative;
   padding-left: 36px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 
@@ -13,21 +18,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   outline: 2px solid $special-dark-grey-4;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
+
 
 .checkbox-field__input:checked + .control__mark-checkbox::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 8px;
+  top: 9px;
+  left: 6px;
   background-image: url("../../images/icons/stack.svg#tick");
   background-repeat: no-repeat;
   background-position: center;
   width: 26px;
   height: 26px;
+
+
+  @media (max-width: $mobile-width-only) {
+    top: 4px;
+    left: 1px;
+  }
 }
 
 
