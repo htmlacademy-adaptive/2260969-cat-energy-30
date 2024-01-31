@@ -5,6 +5,8 @@
 
   @media (min-width: $desktop-width) {
     width: 895px;
+    display: block;
+
   }
 }
 
@@ -26,7 +28,7 @@
 
 .additional-products__item {
   @media (max-width: $mobile-width-only) {
-    padding: 13px 0 19px;
+   padding: 13px 0 19px;
     border-bottom: 1px solid $special-dark-grey-4;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 12px 0;
+//padding: 10px 0 12px 0;
+
+padding: 16px 0;
+
+
+
+
     border-left: 0;
     border-right: 0;
 
@@ -54,8 +62,8 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 5px;
-    column-gap: 40px;
+   // row-gap: 5px;
+    column-gap: 80px;
   }
 }
 
