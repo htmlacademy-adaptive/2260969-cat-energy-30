@@ -67,7 +67,10 @@
 
 .product-use-example__compare-slider {
   margin-top: 20px;
-  margin-bottom: 43px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 43px;
+  }
 
 
   @media (min-width: $tablet-width) {

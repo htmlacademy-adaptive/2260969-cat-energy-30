@@ -38,7 +38,6 @@
     background-color: $basic-grey;
     margin-top: 80px;
     display: flex;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -65,8 +64,6 @@
     grid-template-columns: 50% 50%;
 
     margin-bottom: 17px;
-
-
   }
 
 
@@ -92,13 +89,11 @@
     justify-self: center;
     align-items: center;
   }
+
   @media (min-width: $tablet-width) {
     margin-top: auto;
     margin-bottom: 20px;
-
   }
-
-
 }
 
 
@@ -124,12 +119,11 @@
     text-align: center;
     width: 134px;
     margin: 0 auto;
-   }
+  }
 
   @media (min-width: $desktop-width) {
-   // margin-top: 20px;
+    // margin-top: 20px;
     margin-bottom: 10px;
-
   }
 }
 
@@ -137,7 +131,6 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -150,19 +143,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 214px;
+    padding-top: 211px;
     padding-bottom: 23px;
-
-   }
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-      padding-top: 208px;
-      padding-bottom: 25px;
-
-    }
   }
 
-
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 208px;
+    padding-bottom: 25px;
+  }
+}
 
 
 .main-products__table {
@@ -183,12 +173,11 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 34px;
-
   }
 }
 
@@ -201,8 +190,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-  padding-top: 12px;
-  padding-bottom: 1px;
+    padding-top: 12px;
+    padding-bottom: 1px;
 
     border-bottom: 1px solid $special-dark-grey-4;
   }
@@ -249,8 +238,7 @@
   }
 
   @media (min-width: $tablet-width) {
-   // margin-top: auto;
-
+    // margin-top: auto;
   }
 }
 
@@ -261,10 +249,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 82px;
-   // padding-bottom: 37px;
+    // padding-bottom: 37px;
     background-color: $basic-white;
     border: 2px solid $basic-grey;
-
   }
 }
 
@@ -308,17 +295,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;
-
-
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 20px;
-      }
-
-
-
-
-    }
-
+  }
+}
 

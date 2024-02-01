@@ -6,10 +6,8 @@
   @media (min-width: $desktop-width) {
     width: 895px;
     display: block;
-
   }
 }
-
 
 
 .additional-products__title {
@@ -29,7 +27,7 @@
 
 .additional-products__item {
   @media (max-width: $mobile-width-only) {
-   padding: 13px 0 19px;
+    padding: 13px 0 19px;
     border-bottom: 1px solid $special-dark-grey-4;
     display: flex;
     flex-direction: column;
@@ -53,7 +51,6 @@
     align-items: center;
     display: grid;
     grid-template-columns: 325px 330px 240px;
-
   }
 }
 
