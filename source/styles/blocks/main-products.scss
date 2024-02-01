@@ -65,6 +65,8 @@
     grid-template-columns: 50% 50%;
 
     margin-bottom: 17px;
+
+
   }
 
 
@@ -131,6 +133,13 @@
   }
 }
 
+.main-products__wrapper-all {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
 
 .main-products__item--all .main-products__title {
   @media (max-width: $mobile-width-only) {
