@@ -123,8 +123,7 @@
     background-size: var(--background-item-size);
 
     @media (max-width: $mobile-width-only) {
-
-      top: 10px;
+      top: 13px;
       left: 10px;
     }
 
@@ -247,9 +246,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-
-  padding-right: 15px;
- // display: block;
+  display: block;
 
 
   position: relative;
@@ -261,7 +258,6 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 20px;
-
   }
 
 
@@ -274,9 +270,9 @@
   &::after {
     content: " ";
     position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   width: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
     height: 10px;
     margin-left: 15px;
     background-color: $basic-black;
@@ -284,21 +280,13 @@
     transition: 0.4s ease-in-out;
 
     @media (min-width: $tablet-width) {
-
-    }
-
-    @media (min-width: $desktop-width) {
-
+      margin-left: 25px;
     }
   }
 
 
   &:hover::after {
-    @media (max-width: $mobile-width-only) {
-      width: 36px;
-   
-    }
-
+    width: 36px;
   }
 
   &:active::after {
