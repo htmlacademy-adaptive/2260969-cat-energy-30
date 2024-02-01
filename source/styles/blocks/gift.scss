@@ -12,6 +12,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right: 125px;
     display: flex;
     justify-content: space-between;
     background-image: url("../../images/cat-gift-background-tablet@1x.jpg");
@@ -52,6 +55,8 @@
 
   @media (min-width: $tablet-width) {
     width: 161px;
+    text-align: left;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
