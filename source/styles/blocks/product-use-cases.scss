@@ -276,8 +276,8 @@
     position: absolute;
    top: 50%;
    transform: translateY(-50%);
-    width: 24px;
-    height: 12px;
+   width: 24px;
+    height: 10px;
     margin-left: 15px;
     background-color: $basic-black;
     mask-image: url("../../images/icons/stack.svg#arrow");
@@ -296,6 +296,7 @@
   &:hover::after {
     @media (max-width: $mobile-width-only) {
       width: 36px;
+   
     }
 
   }
