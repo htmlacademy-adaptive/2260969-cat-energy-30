@@ -18,15 +18,21 @@ margin-bottom: 71px;
 
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 
 }
 
 
 .additional-products-line__inner {
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 86px;
 
       }
+
+
+
 }
 
 
@@ -84,7 +90,7 @@ margin-bottom: 71px;
 
     grid-column: span 2;
     padding: 0 37px;
-    margin-left: -34px;
+    margin-left: -38px;
   }
 }
 

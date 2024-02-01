@@ -20,6 +20,11 @@
     background-image: url("../../images/cat-gift-background-tablet@1x.jpg");
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 58px 63px 46px;
+
+  }
+
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background-image: url("../../images/cat-gift-background-tablet@2x.jpg");
   }
@@ -61,6 +66,7 @@
 
   @media (min-width: $desktop-width) {
     width: 150px;
+    text-align: center;
   }
 }
 
