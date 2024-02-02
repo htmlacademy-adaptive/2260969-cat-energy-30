@@ -23,7 +23,7 @@
   }
 }
 
-.toggle__item--open {
+.toggle--open {
   mask: url("../../images/icons/stack.svg#menu-open") no-repeat center;
   background-color: $basic-black;
   // mask-size: 24px 18px;
@@ -39,7 +39,7 @@
 }
 
 
-.toggle__item--close {
+.toggle--close {
   mask: url("../../images/icons/stack.svg#menu-close") no-repeat center;
   background-color: $basic-black;
   mask-size: 18px 18px;

@@ -123,8 +123,7 @@
     background-size: var(--background-item-size);
 
     @media (max-width: $mobile-width-only) {
-
-      top: 10px;
+      top: 13px;
       left: 10px;
     }
 
@@ -247,7 +246,6 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-
   display: block;
 
 
@@ -259,7 +257,7 @@
 
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
 
@@ -272,38 +270,23 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 19px;
-    left: 95px;
-
-
-    width: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
     height: 10px;
-
+    margin-left: 15px;
     background-color: $basic-black;
-
     mask-image: url("../../images/icons/stack.svg#arrow");
-    mask-repeat: no-repeat;
-    mask-position-x: -25px;
-
     transition: 0.4s ease-in-out;
 
     @media (min-width: $tablet-width) {
-      top: 11px;
-      left: 120px;
+      margin-left: 25px;
     }
   }
 
 
   &:hover::after {
-    @media (max-width: $mobile-width-only) {
-      left: 80px;
-      mask-position-x: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      left: 105px;
-      mask-position-x: 0;
-    }
+    width: 36px;
   }
 
   &:active::after {
